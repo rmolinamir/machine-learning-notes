@@ -6,13 +6,12 @@ Let's examine how we will represent a hypothesis function using neural networks.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Neural Networks](#neural-networks)
-  - [Neural Networks Model Representation](#neural-networks-model-representation)
-  - [Neural Networks Cost Function](#neural-networks-cost-function)
-  - [Backpropagation Algorithm](#backpropagation-algorithm)
-  - [Gradient Checking](#gradient-checking)
-  - [Random Initialization (for Theta parameters)](#random-initialization-for-theta-parameters)
-  - [Putting it Together](#putting-it-together)
+- [Neural Networks Model Representation](#neural-networks-model-representation)
+- [Neural Networks Cost Function](#neural-networks-cost-function)
+- [Backpropagation Algorithm](#backpropagation-algorithm)
+- [Gradient Checking](#gradient-checking)
+- [Random Initialization (for Theta parameters)](#random-initialization-for-theta-parameters)
+- [Putting it Together](#putting-it-together)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

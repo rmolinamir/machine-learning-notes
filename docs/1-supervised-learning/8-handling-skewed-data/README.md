@@ -8,10 +8,9 @@ So only half a percent of the patients that come through our screening process h
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Handling Skewed Data](#handling-skewed-data)
-  - [Error Metrics for Skewed Classes](#error-metrics-for-skewed-classes)
-  - [Trading Off Precision and Recall](#trading-off-precision-and-recall)
-  - [Data For Machine Learning](#data-for-machine-learning)
+- [Error Metrics for Skewed Classes](#error-metrics-for-skewed-classes)
+- [Trading Off Precision and Recall](#trading-off-precision-and-recall)
+- [Data For Machine Learning](#data-for-machine-learning)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

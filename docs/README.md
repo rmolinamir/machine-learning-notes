@@ -20,6 +20,11 @@ Supervised learning and Unsupervised learning.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [What is Machine Learning?](#what-is-machine-learning)
+- [Contents](#contents)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Contents
+
+- [Supervised Learning](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/1-supervised-learning#supervised-learning)
+- [Unsupervised Learning](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/2-unsupervised-learning#unsupervised-learning)

@@ -20,7 +20,8 @@ When the target variable that we’re trying to predict is continuous, such as i
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Unsupervised Learning](#unsupervised-learning)
-  - [Unsupervised Learning Model Representation](#unsupervised-learning-model-representation)
+- [Contents](#contents)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Contents

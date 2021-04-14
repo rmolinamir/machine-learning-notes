@@ -17,14 +17,13 @@ Fortunately, there is a pretty simple technique that can let you very quickly ru
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Diagnostics](#diagnostics)
-  - [Diagnosing Neural Networks](#diagnosing-neural-networks)
-  - [Evaluating a Hypothesis](#evaluating-a-hypothesis)
-  - [Model Selection and Train/Validation/Test Sets](#model-selection-and-trainvalidationtest-sets)
-  - [Diagnosing Bias vs. Variance](#diagnosing-bias-vs-variance)
-  - [Regularization and Bias/Variance](#regularization-and-biasvariance)
-  - [Learning Curves](#learning-curves)
-  - [Neural Networks and Overfitting](#neural-networks-and-overfitting)
+- [Diagnosing Neural Networks](#diagnosing-neural-networks)
+- [Evaluating a Hypothesis](#evaluating-a-hypothesis)
+- [Model Selection and Train/Validation/Test Sets](#model-selection-and-trainvalidationtest-sets)
+- [Diagnosing Bias vs. Variance](#diagnosing-bias-vs-variance)
+- [Regularization and Bias/Variance](#regularization-and-biasvariance)
+- [Learning Curves](#learning-curves)
+- [Neural Networks and Overfitting](#neural-networks-and-overfitting)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

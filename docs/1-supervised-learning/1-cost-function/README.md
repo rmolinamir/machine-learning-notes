@@ -12,9 +12,8 @@ The idea is to choose values that will make the hypothesis function outputs clos
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Cost Function](#cost-function)
-  - [Cost Function Intuition 1](#cost-function-intuition-1)
-  - [Cost Function Intuition 2](#cost-function-intuition-2)
+- [Cost Function Intuition 1](#cost-function-intuition-1)
+- [Cost Function Intuition 2](#cost-function-intuition-2)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

@@ -6,22 +6,21 @@ There's one more algorithm that is very powerful and is very widely used both wi
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Support Vector Machines](#support-vector-machines)
-  - [Optimization Objective](#optimization-objective)
-  - [Large Margin Intuition](#large-margin-intuition)
-  - [Mathematics Behind Large Margin Classification](#mathematics-behind-large-margin-classification)
-  - [Kernels I](#kernels-i)
-  - [Kernels II](#kernels-ii)
-    - [Choosing the landmarks for Gaussian kernels](#choosing-the-landmarks-for-gaussian-kernels)
-    - [Choosing parameters C and σ<sup>2</sup> for Gaussian kernels](#choosing-parameters-c-and-σsup2sup-for-gaussian-kernels)
-  - [Using An SVM](#using-an-svm)
-    - [Choosing a kernel](#choosing-a-kernel)
-      - [Gaussian kernel](#gaussian-kernel)
-      - [Linear kernel](#linear-kernel)
-      - [Polynomial kernel](#polynomial-kernel)
-      - [String kernel](#string-kernel)
-    - [Multi-class classification for SVM](#multi-class-classification-for-svm)
-    - [When to use Logistic Regression or SVM?](#when-to-use-logistic-regression-or-svm)
+- [Optimization Objective](#optimization-objective)
+- [Large Margin Intuition](#large-margin-intuition)
+- [Mathematics Behind Large Margin Classification](#mathematics-behind-large-margin-classification)
+- [Kernels I](#kernels-i)
+- [Kernels II](#kernels-ii)
+  - [Choosing the landmarks for Gaussian kernels](#choosing-the-landmarks-for-gaussian-kernels)
+  - [Choosing parameters C and σ<sup>2</sup> for Gaussian kernels](#choosing-parameters-c-and-%CF%83sup2sup-for-gaussian-kernels)
+- [Using An SVM](#using-an-svm)
+  - [Choosing a kernel](#choosing-a-kernel)
+    - [Gaussian kernel](#gaussian-kernel)
+    - [Linear kernel](#linear-kernel)
+    - [Polynomial kernel](#polynomial-kernel)
+    - [String kernel](#string-kernel)
+  - [Multi-class classification for SVM](#multi-class-classification-for-svm)
+  - [When to use Logistic Regression or SVM?](#when-to-use-logistic-regression-or-svm)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

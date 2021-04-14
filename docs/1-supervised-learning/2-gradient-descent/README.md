@@ -16,10 +16,9 @@ We put &theta;<sub>0</sub> on the x axis and &theta;<sub>1</sub> on the y axis, 
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Gradient Descent](#gradient-descent)
-  - [Gradient Descent Algorithm](#gradient-descent-algorithm)
-  - [Gradient Descent Intuition](#gradient-descent-intuition)
-  - [Gradient Descent For Linear Regression](#gradient-descent-for-linear-regression)
+- [Gradient Descent Algorithm](#gradient-descent-algorithm)
+- [Gradient Descent Intuition](#gradient-descent-intuition)
+- [Gradient Descent For Linear Regression](#gradient-descent-for-linear-regression)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

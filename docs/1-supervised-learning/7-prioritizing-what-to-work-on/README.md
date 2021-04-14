@@ -14,8 +14,7 @@ It is difficult to tell which of the options will be most helpful.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Prioritizing What to Work On](#prioritizing-what-to-work-on)
-  - [Error Analysis](#error-analysis)
+- [Error Analysis](#error-analysis)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

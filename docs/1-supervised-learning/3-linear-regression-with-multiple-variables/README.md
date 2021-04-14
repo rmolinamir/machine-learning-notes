@@ -21,18 +21,17 @@ The following image compares gradient descent with one variable to gradient desc
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Linear Regression with Multiple Variables (or Features)](#linear-regression-with-multiple-variables-or-features)
-  - [Gradient Descent in Practice I: Feature Scaling](#gradient-descent-in-practice-i-feature-scaling)
-  - [Gradient Descent in Practice I: Learning Rate](#gradient-descent-in-practice-i-learning-rate)
-  - [Features and Polynomial Regression](#features-and-polynomial-regression)
-  - [Normal Equation](#normal-equation)
-  - [Normal Equation Noninvertibility](#normal-equation-noninvertibility)
-  - [Vectorized Implementations](#vectorized-implementations)
-    - [Sources](#sources)
-    - [Hypothesis Vectorization](#hypothesis-vectorization)
-    - [Cost Function Vectorization](#cost-function-vectorization)
-    - [Cost Function Derivation Vectorization](#cost-function-derivation-vectorization)
-    - ["Side" Mentions](#side-mentions)
+- [Gradient Descent in Practice I: Feature Scaling](#gradient-descent-in-practice-i-feature-scaling)
+- [Gradient Descent in Practice I: Learning Rate](#gradient-descent-in-practice-i-learning-rate)
+- [Features and Polynomial Regression](#features-and-polynomial-regression)
+- [Normal Equation](#normal-equation)
+- [Normal Equation Noninvertibility](#normal-equation-noninvertibility)
+- [Vectorized Implementations](#vectorized-implementations)
+  - [Sources](#sources)
+  - [Hypothesis Vectorization](#hypothesis-vectorization)
+  - [Cost Function Vectorization](#cost-function-vectorization)
+  - [Cost Function Derivation Vectorization](#cost-function-derivation-vectorization)
+  - ["Side" Mentions](#side-mentions)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

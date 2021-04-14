@@ -8,17 +8,16 @@ The classification problem is just like the regression problem, except that the 
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Classification](#classification)
-  - [Hypothesis Representation](#hypothesis-representation)
-  - [Logistic Regression Cost Function](#logistic-regression-cost-function)
-  - [Advanced Optimization Algorithms for Logistic Regresion](#advanced-optimization-algorithms-for-logistic-regresion)
-  - [Multiclass Classification: One-vs-all](#multiclass-classification-one-vs-all)
-  - [Overfitting](#overfitting)
-  - [Regularization Cost Function](#regularization-cost-function)
-  - [Regularized Linear Regression](#regularized-linear-regression)
-    - [Regularized Linear Regression Gradient Descent](#regularized-linear-regression-gradient-descent)
-    - [Regularized Linear Regression Normal Equation](#regularized-linear-regression-normal-equation)
-  - [Regularized Logistic Regression](#regularized-logistic-regression)
+- [Hypothesis Representation](#hypothesis-representation)
+- [Logistic Regression Cost Function](#logistic-regression-cost-function)
+- [Advanced Optimization Algorithms for Logistic Regresion](#advanced-optimization-algorithms-for-logistic-regresion)
+- [Multiclass Classification: One-vs-all](#multiclass-classification-one-vs-all)
+- [Overfitting](#overfitting)
+- [Regularization Cost Function](#regularization-cost-function)
+- [Regularized Linear Regression](#regularized-linear-regression)
+  - [Regularized Linear Regression Gradient Descent](#regularized-linear-regression-gradient-descent)
+  - [Regularized Linear Regression Normal Equation](#regularized-linear-regression-normal-equation)
+- [Regularized Logistic Regression](#regularized-logistic-regression)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
