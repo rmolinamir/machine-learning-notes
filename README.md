@@ -8,7 +8,7 @@
 
 - [Resources](#resources)
 - [Cheatsheets](#cheatsheets)
-- [Docs](#docs)
+- [Contents](#contents)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -27,8 +27,10 @@
 ![Linear Regression Cheat Sheet](https://miro.medium.com/max/1000/1*PZ3TTZZIT1wlqyt05TpZBg.png)
 ![Logistic Regression Cheat Sheet](https://miro.medium.com/max/1000/1*YNmikbD5k_reqBF1QytErQ.png)
 
-## Docs
+## Contents
 
 A collection of notes about different topics regarding the Machine Learning subfield of AI can be found here.
 
-- [Docs](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/#what-is-machine-learning)
+- [Introduction](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/#what-is-machine-learning)
+- [Supervised Learning](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/1-supervised-learning#supervised-learning)
+- [Unsupervised Learning](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/2-unsupervised-learning#unsupervised-learning)
