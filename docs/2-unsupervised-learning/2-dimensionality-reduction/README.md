@@ -4,29 +4,6 @@ There are a couple of different reasons why one might want to do dimensionality 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-- [Data Compression](#data-compression)
-- [Visualization](#visualization)
-- [Principle Component Analysis (PCA) Problem Formulation](#principle-component-analysis-pca-problem-formulation)
-- [Principle Component Analysis (PCA) Applications](#principle-component-analysis-pca-applications)
-- [Principle Component Analysis (PCA) Algorithm](#principle-component-analysis-pca-algorithm)
-- [Reconstruction from Compressed Representation](#reconstruction-from-compressed-representation)
-- [Choosing the number of Principle Components](#choosing-the-number-of-principle-components)
-- [Advice for Applying PCA](#advice-for-applying-pca)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-- [Data Compression](#data-compression)
-- [Visualization](#visualization)
-- [Principle Component Analysis (PCA) Problem Formulation](#principle-component-analysis-pca-problem-formulation)
-- [Principle Component Analysis (PCA) Applications](#principle-component-analysis-pca-applications)
-- [Principle Component Analysis (PCA) Algorithm](#principle-component-analysis-pca-algorithm)
-- [Reconstruction from Compressed Representation](#reconstruction-from-compressed-representation)
-- [Choosing the number of Principle Components](#choosing-the-number-of-principle-components)
-- [Advice for Applying PCA](#advice-for-applying-pca)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 - [Data Compression](#data-compression)
 - [Visualization](#visualization)

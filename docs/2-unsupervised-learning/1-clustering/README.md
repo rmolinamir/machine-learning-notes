@@ -6,29 +6,6 @@ A supervised learning problem is given a set of labels to fit a hypothesis to it
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-- [What is Clustering good for?](#what-is-clustering-good-for)
-- [K-Means Algorithm](#k-means-algorithm)
-- [K-Means Algorithm for Non-Separated Clusters](#k-means-algorithm-for-non-separated-clusters)
-- [K-Means Algorithm Optimization Objective](#k-means-algorithm-optimization-objective)
-- [Random Initialization](#random-initialization)
-- [How do we choose the Number of Clusters?](#how-do-we-choose-the-number-of-clusters)
-  - [Elbow Method](#elbow-method)
-  - [Downstream Purpose Method](#downstream-purpose-method)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-- [What is Clustering good for?](#what-is-clustering-good-for)
-- [K-Means Algorithm](#k-means-algorithm)
-- [K-Means Algorithm for Non-Separated Clusters](#k-means-algorithm-for-non-separated-clusters)
-- [K-Means Algorithm Optimization Objective](#k-means-algorithm-optimization-objective)
-- [Random Initialization](#random-initialization)
-- [How do we choose the Number of Clusters?](#how-do-we-choose-the-number-of-clusters)
-  - [Elbow Method](#elbow-method)
-  - [Downstream Purpose Method](#downstream-purpose-method)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 - [What is Clustering good for?](#what-is-clustering-good-for)
 - [K-Means Algorithm](#k-means-algorithm)

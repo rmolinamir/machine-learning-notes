@@ -6,20 +6,19 @@ Anomaly detection is widely used in monitoring operations such as fraud detectio
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Anomaly Detection](#anomaly-detection)
-  - [Problem Motivation](#problem-motivation)
-  - [Applications](#applications)
-  - [The Gaussian Distribution (Normal Distribution)](#the-gaussian-distribution-normal-distribution)
-    - [Computing μ, and σ<sup>2</sup>](#computing-%CE%BC-and-%CF%83sup2sup)
-  - [Algorithm](#algorithm)
-  - [Developing and Evaluating an Anomaly Detection System](#developing-and-evaluating-an-anomaly-detection-system)
-  - [When to use Anomaly Detection vs. Supervised Learning?](#when-to-use-anomaly-detection-vs-supervised-learning)
-  - [Choosing What Features to Use](#choosing-what-features-to-use)
-  - [Multivariate Gaussian Distribution](#multivariate-gaussian-distribution)
-  - [Anomaly Detection using the Multivariate Gaussian Distribution](#anomaly-detection-using-the-multivariate-gaussian-distribution)
-  - [Normal Gaussian Model vs. Multivariate Gaussian Model](#normal-gaussian-model-vs-multivariate-gaussian-model)
-    - [Normal Gaussian Model](#normal-gaussian-model)
-    - [Multivariate Gaussian Model](#multivariate-gaussian-model)
+- [Problem Motivation](#problem-motivation)
+- [Applications](#applications)
+- [The Gaussian Distribution (Normal Distribution)](#the-gaussian-distribution-normal-distribution)
+  - [Computing μ, and σ<sup>2</sup>](#computing-%CE%BC-and-%CF%83sup2sup)
+- [Algorithm](#algorithm)
+- [Developing and Evaluating an Anomaly Detection System](#developing-and-evaluating-an-anomaly-detection-system)
+- [When to use Anomaly Detection vs. Supervised Learning?](#when-to-use-anomaly-detection-vs-supervised-learning)
+- [Choosing What Features to Use](#choosing-what-features-to-use)
+- [Multivariate Gaussian Distribution](#multivariate-gaussian-distribution)
+- [Anomaly Detection using the Multivariate Gaussian Distribution](#anomaly-detection-using-the-multivariate-gaussian-distribution)
+- [Normal Gaussian Model vs. Multivariate Gaussian Model](#normal-gaussian-model-vs-multivariate-gaussian-model)
+  - [Normal Gaussian Model](#normal-gaussian-model)
+  - [Multivariate Gaussian Model](#multivariate-gaussian-model)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
