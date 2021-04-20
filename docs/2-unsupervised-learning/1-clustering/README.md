@@ -19,6 +19,28 @@ A supervised learning problem is given a set of labels to fit a hypothesis to it
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+- [What is Clustering good for?](#what-is-clustering-good-for)
+- [K-Means Algorithm](#k-means-algorithm)
+- [K-Means Algorithm for Non-Separated Clusters](#k-means-algorithm-for-non-separated-clusters)
+- [K-Means Algorithm Optimization Objective](#k-means-algorithm-optimization-objective)
+- [Random Initialization](#random-initialization)
+- [How do we choose the Number of Clusters?](#how-do-we-choose-the-number-of-clusters)
+  - [Elbow Method](#elbow-method)
+  - [Downstream Purpose Method](#downstream-purpose-method)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+- [What is Clustering good for?](#what-is-clustering-good-for)
+- [K-Means Algorithm](#k-means-algorithm)
+- [K-Means Algorithm for Non-Separated Clusters](#k-means-algorithm-for-non-separated-clusters)
+- [K-Means Algorithm Optimization Objective](#k-means-algorithm-optimization-objective)
+- [Random Initialization](#random-initialization)
+- [How do we choose the Number of Clusters?](#how-do-we-choose-the-number-of-clusters)
+  - [Elbow Method](#elbow-method)
+  - [Downstream Purpose Method](#downstream-purpose-method)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## What is Clustering good for?
 
 **One use case is market segmentation**, where you may have a database of customers and want to group them into different marker segments so you can sell to them separately or serve your different market segments better.
