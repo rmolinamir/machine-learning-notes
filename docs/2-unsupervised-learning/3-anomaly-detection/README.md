@@ -1,3 +1,7 @@
+# Anomaly Detection
+
+Anomaly detection is widely used in monitoring operations such as fraud detection (e.g. ‘has this credit card been stolen?’). Given a large number of data points, we may sometimes want to figure out which ones vary significantly from the average. For example, in manufacturing, we may want to detect defects or anomalies. We show how a dataset can be modeled using a Gaussian distribution, and how the model can be used for anomaly detection.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -18,10 +22,6 @@
     - [Multivariate Gaussian Model](#multivariate-gaussian-model)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Anomaly Detection
-
-Anomaly detection is widely used in monitoring operations such as fraud detection (e.g. ‘has this credit card been stolen?’). Given a large number of data points, we may sometimes want to figure out which ones vary significantly from the average. For example, in manufacturing, we may want to detect defects or anomalies. We show how a dataset can be modeled using a Gaussian distribution, and how the model can be used for anomaly detection.
 
 ## Problem Motivation
 
