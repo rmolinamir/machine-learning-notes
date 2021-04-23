@@ -58,4 +58,3 @@ When the target variable that we’re trying to predict is continuous, such as i
   - [Normal Gaussian Model vs. Multivariate Gaussian Model](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/2-unsupervised-learning/3-anomaly-detection/#normal-gaussian-model-vs-multivariate-gaussian-model)
     - [Normal Gaussian Model](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/2-unsupervised-learning/3-anomaly-detection/#normal-gaussian-model)
     - [Multivariate Gaussian Model](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/2-unsupervised-learning/3-anomaly-detection/#multivariate-gaussian-model)
-- [Recommender Systems](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/2-unsupervised-learning/4-recommender-systems/#recommender-systems)
