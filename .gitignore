@@ -136,6 +136,11 @@ aws.ssm.config.json
 ### https://github.com/dibgerge/ml-coursera-python-assignments
 ###
 
+### NOTE: We really might only need the following items:
+# __pycache__/
+# .ipynb_checkpoints/
+# *.pkl
+
 ### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
