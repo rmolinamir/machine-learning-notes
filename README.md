@@ -1,4 +1,4 @@
-# machine-learning-introduction
+# machine-learning-notes
 
 > Just random notes while studying ML.
 
@@ -31,7 +31,7 @@
 
 A collection of notes about different topics regarding the Machine Learning subfield of AI can be found here.
 
-- [Introduction](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/#what-is-machine-learning)
-- [Supervised Learning](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/1-supervised-learning#supervised-learning)
-- [Unsupervised Learning](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/2-unsupervised-learning#unsupervised-learning)
-- [Machine Learning Systems](https://github.com/rmolinamir/machine-learning-introduction/tree/main/docs/3-machine-learning-systems#machine-learning-systems)
+- [Introduction](https://github.com/rmolinamir/machine-learning-notes/tree/main/docs/#what-is-machine-learning)
+- [Supervised Learning](https://github.com/rmolinamir/machine-learning-notes/tree/main/docs/1-supervised-learning#supervised-learning)
+- [Unsupervised Learning](https://github.com/rmolinamir/machine-learning-notes/tree/main/docs/2-unsupervised-learning#unsupervised-learning)
+- [Machine Learning Systems](https://github.com/rmolinamir/machine-learning-notes/tree/main/docs/3-machine-learning-systems#machine-learning-systems)

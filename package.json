@@ -1,7 +1,7 @@
 {
-  "name": "machine-learning-introduction",
+  "name": "machine-learning-notes",
   "version": "1.0.0",
-  "description": "Just random notes while studying ML.",
+  "description": "Machine Learning theory and examples.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rmolinamir/machine-learning-introduction.git"
+    "url": "git+https://github.com/rmolinamir/machine-learning-notes.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rmolinamir/machine-learning-introduction/issues"
+    "url": "https://github.com/rmolinamir/machine-learning-notes/issues"
   },
-  "homepage": "https://github.com/rmolinamir/machine-learning-introduction#readme",
+  "homepage": "https://github.com/rmolinamir/machine-learning-notes#readme",
   "dependencies": {
     "doctoc": "2.0.0"
   },
