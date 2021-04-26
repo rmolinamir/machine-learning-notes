@@ -16,9 +16,27 @@ import axios from 'axios';
 import { JSDOM } from 'jsdom';
 import { Spinner } from 'cli-spinner';
 
-//
-// TYPES
-//
+// PARAMS
+const CACHE_PATH = resolve(__dirname, '.replace-md-images.cache.json');
+const SEARCH_DIRECTORY = resolve(__dirname, '..');
+
+// CACHE
+const cache: Record<string, Record<string, unknown>> = JSON.parse(readFileSync(
+  CACHE_PATH,
+  { encoding: 'utf-8' },
+));
+
+function saveCacheImageResolution(saveDirectory: string, src: string): void {
+  if (!cache[saveDirectory]) {
+    cache[saveDirectory] = {};
+  }
+
+  cache[saveDirectory][src] = true;
+}
+
+function checkCachedImageResolution(saveDirectory: string, src: string): boolean {
+  return Boolean(cache[saveDirectory] && cache[saveDirectory][src]);
+}
 
 interface Image {
   alt: string
@@ -26,38 +44,7 @@ interface Image {
   src: string
 }
 
-//
-// PARAMS
-//
-
-const CACHE_PATH = resolve(__dirname, '.download-md-images.cache.json');
-const SEARCH_DIRECTORY = resolve(__dirname, '..');
-
-//
-// CACHE
-//
-
-const cache: Record<string, Record<string, string>> = JSON.parse(readFileSync(
-  CACHE_PATH,
-  { encoding: 'utf-8' },
-));
-
-function saveCacheImageResolution(saveDirectory: string, src: string, filePath: string): void {
-  if (!cache[saveDirectory]) {
-    cache[saveDirectory] = {};
-  }
-
-  cache[saveDirectory][src] = filePath;
-}
-
-function checkCachedImageResolution(saveDirectory: string, src: string): boolean {
-  return Boolean(cache[saveDirectory] && cache[saveDirectory][src]);
-}
-
-//
-// IMPLEMENTATION
-//
-
+// CLI Spinner ;)
 const spinner = new Spinner('Fetching images...');
 
 const { readdir } = promises;
@@ -139,12 +126,12 @@ function findImagesInMarkdown(file: string): Array<Image> {
 }
 
 /**
- * Downloads all of the found images in the markdown files,
+ * Replaces all of the found images in the markdown files,
  * then save the data in the passed directory.
  * @param {Image[]} images - Array of images attrs.
- * @param {string} saveDirectory - Download directory.
+ * @param {string} saveDirectory - Replace directory.
  */
-async function downloadImages(images: Image[], saveDirectory: string) {
+async function replaceImages(images: Image[], saveDirectory: string) {
   for (let i = 0; i < images.length; i++) {
     const { src, title, alt } = images[i];
 
@@ -157,22 +144,20 @@ async function downloadImages(images: Image[], saveDirectory: string) {
       if (!checkCachedImageResolution(saveDirectory, src)) {
         const result = await axios({ url: src, responseType: 'stream' });
 
-        // Downloading the images, then saving them.
+        // Replaceing the images, then saving them.
         await new Promise(resolve => {
           // Check if path exists first, if not then create the images dir.
           if (!existsSync(join(saveDirectory, 'images'))) {
             mkdirSync(join(saveDirectory, 'images'));
           }
-
-          const filePath = join(saveDirectory, 'images', filename);
   
           result.data
             .pipe(createWriteStream(
-              filePath,
+              join(saveDirectory, 'images', filename),
               { flags: 'w+' },
             ))
             .on('finish', (value: unknown) => {
-              saveCacheImageResolution(saveDirectory, src, filePath);
+              saveCacheImageResolution(saveDirectory, src);
   
               resolve(value);
             })
@@ -192,11 +177,11 @@ async function downloadImages(images: Image[], saveDirectory: string) {
 }
 
 /**
- * Downloads all images then saves them in an images directory
- * at the same scope of the found markdown file.
+ * Replaces all images (from the downloaded cache of images) found in all
+ * markdown files within the search directory.
  * @param {string} searchDirectory - Search directory.
  */
-async function downloadMarkdownImages(searchDirectory: string = __dirname) {
+async function replaceMarkdownImages(searchDirectory: string = __dirname) {
   spinner.start();
 
   let index = 0;
@@ -217,7 +202,7 @@ async function downloadMarkdownImages(searchDirectory: string = __dirname) {
         .slice(0, directory.length - 1)
         .join('\\');
 
-      await downloadImages(images, saveDirectory);
+      await replaceImages(images, saveDirectory);
     }
   }
 
@@ -227,12 +212,12 @@ async function downloadMarkdownImages(searchDirectory: string = __dirname) {
 }
 
 // TODO: Parse process.argv to parameterize the search directories.
-downloadMarkdownImages(SEARCH_DIRECTORY).then(() => {
+replaceMarkdownImages(SEARCH_DIRECTORY).then(() => {
   if (errors.length) {
     console.log('\n');
     console.warn('We found the following errors: ', errors);
     console.log('\n');
   }
 
-  console.log('\nDone, exiting Node.js.');
+  console.log('\nDone! Exiting Node.js...');
 });

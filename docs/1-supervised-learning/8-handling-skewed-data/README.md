@@ -43,7 +43,7 @@ For many applications, we'll want to somehow control the trade-off between preci
 
 The F Score, which is also called the F1 Score, is a little bit like taking the average of precision and recall, but it gives a higher weight to the lower value of precision and recall, whichever it is. And so, you see in the numerator here that the F Score takes a product of precision and recall. And so if either precision is 0 or recall is equal to 0, the F Score will be equal to 0. So in that sense, it kind of combines precision and recall, but for the F Score to be large, both precision and recall have to be pretty large. I should say that there are many different possible formulas for combing precision and recall. This F Score formula is really just one out of a much larger number of possibilities, but historically or traditionally this is what people in Machine Learning seem to use:
 
-![Trading Off Precision and Recall F1 Score](blob:https://imgur.com/c9bb13c9-da81-4563-ae58-25305514fe7a)
+![Trading Off Precision and Recall F1 Score](https://i.imgur.com/iJAHbo4.png)
 
 And the term F Score, it doesn't really mean anything, so don't worry about why it's called F Score or F1 Score. The F Score is used to use precision and recall as an evaluation metric for learning algorithms, more specifically, as a single real number evaluation metric. So you try a range of values of thresholds and evaluate these different thresholds on your cross-validation set and then to pick whatever value of threshold gives you the highest F Score on your cross validation data set. That would be a pretty reasonable way to automatically choose the threshold for your classifier as well.
 

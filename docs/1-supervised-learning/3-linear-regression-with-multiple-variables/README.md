@@ -15,7 +15,7 @@ Using the definition of matrix multiplication, our multivariable hypothesis func
 
 The following image compares gradient descent with one variable to gradient descent with multiple variables:
 
-![Linear Regression with Multiple Variables Equation Comparison](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/MYm8uqafEeaZoQ7hPZtKqg_c974c2e2953662e9578b38c7b04591ed_Screenshot-2016-11-09-09.07.04.png?expiry=1616544000000&hmac=-fOuuby0bx9OAzNlJ06s8FkJ5VnfjDcXLPo_a0-J36Q)
+![Linear Regression with Multiple Variables Equation Comparison](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/MYm8uqafEeaZoQ7hPZtKqg_c974c2e2953662e9578b38c7b04591ed_Screenshot-2016-11-09-09.07.04.png?expiry=1619568000000&hmac=lIVVHvdxeZxhtJMLM8CTVlqe-iJaAAABPV2_fykKmSc)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

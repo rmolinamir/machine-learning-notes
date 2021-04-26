@@ -53,7 +53,7 @@ To compute the test set error:
 
 This gives us a binary 0 or 1 error result based on a misclassification. The average test error for the test set is:
 
-![Test Error](blob:https://imgur.com/257d6e08-f397-43a6-9f21-925b6a09eef7)
+![Test Error](https://i.imgur.com/UD9NxXd.png)
 
 This gives us the proportion of the test data that was misclassified.
 
@@ -93,7 +93,7 @@ High variance (overfitting): the training error is low, but the cross validation
 
 The is summarized in the figure below:
 
-![Diagnosing Bias vs. Variance](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/I4dRkz_pEeeHpAqQsW8qwg_bed7efdd48c13e8f75624c817fb39684_fixed.png?expiry=1617926400000&hmac=VZoumHH6rUt2FxeDXqVxBXWUH3FjZITom9G117kPRZ0)
+![Diagnosing Bias vs. Variance](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/I4dRkz_pEeeHpAqQsW8qwg_bed7efdd48c13e8f75624c817fb39684_fixed.png?expiry=1619568000000&hmac=yHA_uY3oeGDeyEt_IfBM-RGYEjondM1JxDKhmr9lOaw)
 
 ## Regularization and Bias/Variance
 
@@ -123,7 +123,7 @@ Training an algorithm on a very few number of data points (such as 1, 2 or 3) wi
 
 **If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much.**
 
-![Typical Learning Curve for High Bias](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bpAOvt9uEeaQlg5FcsXQDA_ecad653e01ee824b231ff8b5df7208d9_2-am.png?expiry=1618012800000&hmac=HqstDFHVhZxUr92hEutpTCX4rSVV1rYKRJm1FNPwq7g)
+![Typical Learning Curve for High Bias](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bpAOvt9uEeaQlg5FcsXQDA_ecad653e01ee824b231ff8b5df7208d9_2-am.png?expiry=1619568000000&hmac=XyuadkH9BurLzUcrhUryD8893YBT-smlN_3NPq5B35w)
 
 **Experiencing high variance:**
 
@@ -133,7 +133,7 @@ Training an algorithm on a very few number of data points (such as 1, 2 or 3) wi
 
 **If a learning algorithm is suffering from high variance, getting more training data is likely to help.**
 
-![Typical Learning Curve for High Variance](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/vqlG7t9uEeaizBK307J26A_3e3e9f42b5e3ce9e3466a0416c4368ee_ITu3antfEeam4BLcQYZr8Q_37fe6be97e7b0740d1871ba99d4c2ed9_300px-Learning1.png?expiry=1618012800000&hmac=_FIJ-PUK9rv3oiB91WgWdapRF0p6BauQaTCsHDmM4iY)
+![Typical Learning Curve for High Variance](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/vqlG7t9uEeaizBK307J26A_3e3e9f42b5e3ce9e3466a0416c4368ee_ITu3antfEeam4BLcQYZr8Q_37fe6be97e7b0740d1871ba99d4c2ed9_300px-Learning1.png?expiry=1619568000000&hmac=Mfr0tu_9kOrCHMCVDJiATHitUYc3CCew5Rf_LnxwMTw)
 
 ## Neural Networks and Overfitting
 

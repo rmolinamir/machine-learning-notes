@@ -33,7 +33,7 @@ Each layer gets its own matrix of weights, and the dimensions of these matrices 
 
 The +1 comes from the addition of the "bias nodes". In other words the output nodes will not include the bias nodes while the inputs will. The following image summarizes our model representation:
 
-![Neural Networks Model Representation 1](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/0rgjYLDeEeajLxLfjQiSjg_0c07c56839f8d6e8d7b0d09acedc88fd_Screenshot-2016-11-22-10.08.51.png?expiry=1617580800000&hmac=OJE8Zcbk40TyD8YYLApFy9Nzs-Ciz9ukHKSSspIBMmM)
+![Neural Networks Model Representation 1](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/0rgjYLDeEeajLxLfjQiSjg_0c07c56839f8d6e8d7b0d09acedc88fd_Screenshot-2016-11-22-10.08.51.png?expiry=1619568000000&hmac=eGToZqvXkvcM9izLda9-r49PRX38cZU2RJIZ_ghffCo)
 
 ## Neural Networks Cost Function
 
@@ -79,7 +79,7 @@ For training example t =1 to m:
 
 2. Perform forward propagation to compute <i>a<sup>(1)</sup></i> for l = 2, 3, …, L.
 
-      ![Forward propagation](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bYLgwteoEeaX9Qr89uJd1A_73f280ff78695f84ae512f19acfa29a3_Screenshot-2017-01-10-18.16.50.png?expiry=1617667200000&hmac=DD9nNkHvYm8XPW2K_xLf2UH3c_cxZioEMEXET6GHSL8)
+      ![Forward propagation](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bYLgwteoEeaX9Qr89uJd1A_73f280ff78695f84ae512f19acfa29a3_Screenshot-2017-01-10-18.16.50.png?expiry=1619568000000&hmac=gQqZyrnYxv0chkkZuyQ3UdBVS8DCBl38p3BA8fSUJn0)
 
 3. Using <i>y<sup>(t)</sup></i>, compute <i>δ<sup>(L)</sup> = a<sup>(L)</sup> - y<sup>(t)</sup></i>
 
@@ -180,6 +180,6 @@ for i = 1:m,
 
 The following image gives us an intuition of what is happening as we are implementing our neural network:
 
-![Neural Network Gradient Descent Intuition](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/hGk18LsaEea7TQ6MHcgMPA_8de173808f362583eb39cdd0c89ef43e_Screen-Shot-2016-12-05-at-10.40.35-AM.png?expiry=1617840000000&hmac=g-Cgo_Qr2lzT451qlBsRQT_gV99LSpgkSCkfphiQzAc)
+![Neural Network Gradient Descent Intuition](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/hGk18LsaEea7TQ6MHcgMPA_8de173808f362583eb39cdd0c89ef43e_Screen-Shot-2016-12-05-at-10.40.35-AM.png?expiry=1619568000000&hmac=hPPpL5XyaP5WkbIwITWpEYoYtWVFAiY4QEUBf1xVehY)
 
 Ideally, you want <i>h<sub>Θ</sub>(x<sup>(i)</sup>) ≈ y<sup>(i)</sup></i>. This will minimize our cost function. However, keep in mind that <i>J(Θ)</i> is not convex and thus we can end up in a local minimum instead.

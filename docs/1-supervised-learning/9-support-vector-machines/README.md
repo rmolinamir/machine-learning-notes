@@ -77,7 +77,7 @@ The optimization objective is trying to find a set of parameters where the norm 
 
 So lets chose a different boundary:
 
-![Mathematics Behind Large Margin Classification Example III](https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20[39].png)
+![Mathematics Behind Large Margin Classification Example III](https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B39%5D.png)
 
 Now if you look at the projection of the examples to θ we find that <i>p<sup>1</sup></i> becomes large and ||θ|| can become small. This means that by choosing this second decision boundary we can make ||θ|| smaller, which is why the SVM choses this hypothesis as better.
 
