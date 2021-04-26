@@ -7,14 +7,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Coursera Machine Learning MOOC by Andrew Ng](#coursera-machine-learning-mooc-by-andrew-ng)
-- [Python Programming Assignments](#python-programming-assignments)
-  - [Downloading the Assignments](#downloading-the-assignments)
-  - [Requirements](#requirements)
-  - [Python Installation](#python-installation)
-  - [Python Tutorials](#python-tutorials)
-  - [Caveats and tips](#caveats-and-tips)
-  - [Acknowledgements](#acknowledgements)
+- [Downloading the Assignments](#downloading-the-assignments)
+- [Requirements](#requirements)
+- [Python Installation](#python-installation)
+- [Python Tutorials](#python-tutorials)
+- [Caveats and tips](#caveats-and-tips)
+- [Acknowledgements](#acknowledgements)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

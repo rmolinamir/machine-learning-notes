@@ -47,7 +47,7 @@ The new procedure using these two sets is then:
 1. Learn Θ and minimize <i>J<sub>train</sub>(Θ)</i> using the training set
 2. Compute the test set error <i>J<sub>test</sub>(Θ)</i>
 
-To computer the test set error:
+To compute the test set error:
 
 ![The test set error](https://i.imgur.com/qBLc8s1.png)
 

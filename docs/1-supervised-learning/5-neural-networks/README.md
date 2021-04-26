@@ -106,7 +106,7 @@ For training example t =1 to m:
 
 Gradient checking will assure that our backpropagation works as intended. We can approximate the derivative of our cost function with:
 
-![Gradienct Checking 1](https://i.imgur.com/8M2iNR2.png)
+![Gradient Checking 1](https://i.imgur.com/8M2iNR2.png)
 
 With multiple theta matrices, we can approximate the derivative with respect to Θ as follows:
 

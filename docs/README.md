@@ -20,9 +20,36 @@ Supervised learning and Unsupervised learning.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [Summary](#summary)
 - [Contents](#contents)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Summary
+
+- Supervised Learning (labeled data).
+  - Linear Regression.
+  - Logistic Regression.
+  - Neural Networks.
+  - Advice on building machine learning systems (applies for all types of machine learning systems).
+    - Bias and variance.
+    - Regularization.
+    - Algorithm evaluation.
+    - Learning curves.
+    - Error analysis.
+  - Support Vector Machines.
+- Unsupervised Learning (unlabeled data).
+  - K-Means.
+  - PCA.
+  - Anomaly Detection.
+- Machine Learning Systems (Special Applications/Topics).
+  - Recommender Systems.
+  - Large Scale Machine Learning.
+  - Online Learning.
+  - Map Reduce and Data Parallelism.
+  - Application Example: Photo OCR (Advice on building machine learning systems).
+    - What to do next when developing a system.
+    - Ceiling Analysis.
 
 ## Contents
 
