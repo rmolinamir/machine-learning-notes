@@ -8,13 +8,14 @@ import {
   readFileSync,
   mkdirSync,
   existsSync,
-  promises,
-  writeFileSync,
 } from 'fs';
 import marked from 'marked';
 import axios from 'axios';
 import { JSDOM } from 'jsdom';
 import { Spinner } from 'cli-spinner';
+
+// Helpers
+import { MdImagesJsonCache, getFiles } from './helpers';
 
 //
 // TYPES
@@ -30,29 +31,14 @@ interface Image {
 // PARAMS
 //
 
-const CACHE_PATH = resolve(__dirname, '.download-md-images.cache.json');
+const CACHE_PATH = resolve(__dirname, '.download-md-images.mdImagesJsonCache.json');
 const SEARCH_DIRECTORY = resolve(__dirname, '..');
 
 //
 // CACHE
 //
 
-const cache: Record<string, Record<string, string>> = JSON.parse(readFileSync(
-  CACHE_PATH,
-  { encoding: 'utf-8' },
-));
-
-function saveCacheImageResolution(saveDirectory: string, src: string, filePath: string): void {
-  if (!cache[saveDirectory]) {
-    cache[saveDirectory] = {};
-  }
-
-  cache[saveDirectory][src] = filePath;
-}
-
-function checkCachedImageResolution(saveDirectory: string, src: string): boolean {
-  return Boolean(cache[saveDirectory] && cache[saveDirectory][src]);
-}
+const mdImagesJsonCache = new MdImagesJsonCache({ cachePath: CACHE_PATH });
 
 //
 // IMPLEMENTATION
@@ -60,53 +46,7 @@ function checkCachedImageResolution(saveDirectory: string, src: string): boolean
 
 const spinner = new Spinner('Fetching images...');
 
-const { readdir } = promises;
-
-const DIR_BLACKLIST = [
-  'node_modules',
-  'ml-coursera-python-assignments',
-  '.git',
-];
-
 const errors: string[] = [];
-
-/**
- * Recursive Files Async Iterator Generator. Allow us to iterate over data that
- * comes asynchronously, in this case the data will be our directories.
- * Returns an Async Iterator of the files in every directory that
- * is not a node module or a git folder.
- * @param {string} dir - Directory.
- */
-async function* getFiles(dir: string): AsyncGenerator<string> {
-  // A representation of a directory entry, as
-  // returned by reading from an fs.Dir.
-  const dirents = await readdir(dir, { withFileTypes: true });
-
-  for (const dirent of dirents) { // Base condition.
-    // Resolving the files and directories.
-    const res = resolve(dir, dirent.name);
-
-    // // Do not get files if they're node modules or git folders.
-    // const shouldNotGetFiles = (
-    //   res.includes('node_modules') ||
-    //   res.includes('node_modules') ||
-    //   res.includes('.git')
-    // );
-
-    // Do not get files if they're node modules or git folders.
-    const shouldNotGetFiles = DIR_BLACKLIST.reduce(
-      (bool, dir) => bool || res.includes(dir),
-      false,
-    );
-
-    // If it's a directory, recursively get more files.
-    if (dirent.isDirectory() && !shouldNotGetFiles) {
-      yield* getFiles(res);
-    } else {
-      yield res; // Return the file.
-    }
-  }
-}
 
 /**
  * Parses the Markdown file into a HTML file, then creates a DOM object,
@@ -154,7 +94,7 @@ async function downloadImages(images: Image[], saveDirectory: string) {
 
     try {
       // Fetch the image ONLY if it hasn't been cached.
-      if (!checkCachedImageResolution(saveDirectory, src)) {
+      if (!mdImagesJsonCache.exists(saveDirectory, src)) {
         const result = await axios({ url: src, responseType: 'stream' });
 
         // Downloading the images, then saving them.
@@ -172,7 +112,7 @@ async function downloadImages(images: Image[], saveDirectory: string) {
               { flags: 'w+' },
             ))
             .on('finish', (value: unknown) => {
-              saveCacheImageResolution(saveDirectory, src, filePath);
+              mdImagesJsonCache.set(saveDirectory, src, filePath);
   
               resolve(value);
             })
@@ -186,7 +126,7 @@ async function downloadImages(images: Image[], saveDirectory: string) {
       errors.push(`Fetching image [${src}] resulted in the following error: ${err.message}`);
     } finally {
       // Save the cache after each iteration.
-      writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
+      mdImagesJsonCache.write();
     }
   }
 }
@@ -209,13 +149,13 @@ async function downloadMarkdownImages(searchDirectory: string = __dirname) {
     if (fileFormat === 'md') {
       spinner.setSpinnerString(index);
 
-      const images = findImagesInMarkdown(file);
-
       const directory = file.split('\\');
 
       const saveDirectory = directory
         .slice(0, directory.length - 1)
         .join('\\');
+
+      const images = findImagesInMarkdown(file);
 
       await downloadImages(images, saveDirectory);
     }

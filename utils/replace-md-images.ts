@@ -1,178 +1,68 @@
 // Libraries
 import {
   resolve,
-  join,
 } from 'path';
 import {
-  createWriteStream,
   readFileSync,
-  mkdirSync,
-  existsSync,
-  promises,
   writeFileSync,
 } from 'fs';
-import marked from 'marked';
-import axios from 'axios';
-import { JSDOM } from 'jsdom';
 import { Spinner } from 'cli-spinner';
 
+// Helpers
+import { MdImagesJsonCache, getFiles } from './helpers';
+
+//
 // PARAMS
+//
+
 const CACHE_PATH = resolve(__dirname, '.replace-md-images.cache.json');
 const SEARCH_DIRECTORY = resolve(__dirname, '..');
 
+//
 // CACHE
-const cache: Record<string, Record<string, unknown>> = JSON.parse(readFileSync(
-  CACHE_PATH,
-  { encoding: 'utf-8' },
-));
+//
 
-function saveCacheImageResolution(saveDirectory: string, src: string): void {
-  if (!cache[saveDirectory]) {
-    cache[saveDirectory] = {};
-  }
+const mdImagesJsonCache = new MdImagesJsonCache({ cachePath: CACHE_PATH });
 
-  cache[saveDirectory][src] = true;
-}
+//
+// IMPLEMENTATION
+//
 
-function checkCachedImageResolution(saveDirectory: string, src: string): boolean {
-  return Boolean(cache[saveDirectory] && cache[saveDirectory][src]);
-}
-
-interface Image {
-  alt: string
-  title: string
-  src: string
-}
-
-// CLI Spinner ;)
 const spinner = new Spinner('Fetching images...');
-
-const { readdir } = promises;
-
-const DIR_BLACKLIST = [
-  'node_modules',
-  'ml-coursera-python-assignments',
-  '.git',
-];
 
 const errors: string[] = [];
 
 /**
- * Recursive Files Async Iterator Generator. Allow us to iterate over data that
- * comes asynchronously, in this case the data will be our directories.
- * Returns an Async Iterator of the files in every directory that
- * is not a node module or a git folder.
- * @param {string} dir - Directory.
+ * Transform local URI string to an equivalent Github-like URI string as
+ * if the file was uploaded.
+ * @param {string} localUri - Local URI string.
  */
-async function* getFiles(dir: string): AsyncGenerator<string> {
-  // A representation of a directory entry, as
-  // returned by reading from an fs.Dir.
-  const dirents = await readdir(dir, { withFileTypes: true });
+function transformLocalUriToGithubUri(localUri: string): string {
 
-  for (const dirent of dirents) { // Base condition.
-    // Resolving the files and directories.
-    const res = resolve(dir, dirent.name);
-
-    // // Do not get files if they're node modules or git folders.
-    // const shouldNotGetFiles = (
-    //   res.includes('node_modules') ||
-    //   res.includes('node_modules') ||
-    //   res.includes('.git')
-    // );
-
-    // Do not get files if they're node modules or git folders.
-    const shouldNotGetFiles = DIR_BLACKLIST.reduce(
-      (bool, dir) => bool || res.includes(dir),
-      false,
-    );
-
-    // If it's a directory, recursively get more files.
-    if (dirent.isDirectory() && !shouldNotGetFiles) {
-      yield* getFiles(res);
-    } else {
-      yield res; // Return the file.
-    }
-  }
+  return localUri;
 }
 
 /**
- * Parses the Markdown file into a HTML file, then creates a DOM object,
- * then uses querySelectorAll to find all of the images.
- * The images are processed to get their metadata, then we return an image
- * array.
- * @param {string} file - Markdown File.
+ * Replaces all images in a Markdown file with the ones from the cache
+ * AFTER transforming them to a Github-like URI as if they were uploaded.
  */
-function findImagesInMarkdown(file: string): Array<Image> {
-  const readMe = readFileSync(file, 'utf-8');
+function replaceAndTransformMdImage(file: string, saveDirectory: string): void {
+  const directoryCache = mdImagesJsonCache.cache[saveDirectory] || {};
 
-  const readmeHtml = marked(readMe); // .md to .html.
+  const cachedImages = Object.keys(directoryCache);
 
-  const dom = new JSDOM(readmeHtml);// .html to DOM.
+  if (cachedImages.length) {
+    const fileContents = readFileSync(file, { encoding: 'utf-8' });
 
-  const images: Array<Image> = Array // Parsing images in the DOM.
-    .prototype
-    .slice
-    .call(dom.window.document.querySelectorAll('img'))
-    .reduce((rawImages: Array<Image>, image: any) => {
-      rawImages.push({
-        alt: image.getAttribute('alt') as string,
-        title: image.getAttribute('title') as string,
-        src: image.getAttribute('src') as string,
-      });
-      return rawImages;
-    }, []);
+    cachedImages.forEach(i => {
+      const src = directoryCache[i];
 
-  return images;
-}
+      const transformedSrc = transformLocalUriToGithubUri(src);
 
-/**
- * Replaces all of the found images in the markdown files,
- * then save the data in the passed directory.
- * @param {Image[]} images - Array of images attrs.
- * @param {string} saveDirectory - Replace directory.
- */
-async function replaceImages(images: Image[], saveDirectory: string) {
-  for (let i = 0; i < images.length; i++) {
-    const { src, title, alt } = images[i];
+      fileContents.replace(i, transformedSrc);
+    });
 
-    const filename = `${title ? `${title}_${alt}` : alt}.png`
-      .replace(/[/\\?%*:|"<>]/g, '')
-      .replace(' ', '-');
-
-    try {
-      // Fetch the image ONLY if it hasn't been cached.
-      if (!checkCachedImageResolution(saveDirectory, src)) {
-        const result = await axios({ url: src, responseType: 'stream' });
-
-        // Replaceing the images, then saving them.
-        await new Promise(resolve => {
-          // Check if path exists first, if not then create the images dir.
-          if (!existsSync(join(saveDirectory, 'images'))) {
-            mkdirSync(join(saveDirectory, 'images'));
-          }
-  
-          result.data
-            .pipe(createWriteStream(
-              join(saveDirectory, 'images', filename),
-              { flags: 'w+' },
-            ))
-            .on('finish', (value: unknown) => {
-              saveCacheImageResolution(saveDirectory, src);
-  
-              resolve(value);
-            })
-            .on('error', (err: Error) => {
-              // throw new Error(_.message);
-              errors.push(`Fetching image [${src}] resulted in the following error: ${err.message}`);
-            });
-        });
-      }
-    } catch (err) {
-      errors.push(`Fetching image [${src}] resulted in the following error: ${err.message}`);
-    } finally {
-      // Save the cache after each iteration.
-      writeFileSync(CACHE_PATH, JSON.stringify(cache, null, 2));
-    }
+    writeFileSync(file, fileContents, { flag: 'w+' });
   }
 }
 
@@ -194,15 +84,13 @@ async function replaceMarkdownImages(searchDirectory: string = __dirname) {
     if (fileFormat === 'md') {
       spinner.setSpinnerString(index);
 
-      const images = findImagesInMarkdown(file);
-
       const directory = file.split('\\');
 
       const saveDirectory = directory
         .slice(0, directory.length - 1)
         .join('\\');
 
-      await replaceImages(images, saveDirectory);
+      replaceAndTransformMdImage(file, saveDirectory);
     }
   }
 
