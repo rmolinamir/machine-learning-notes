@@ -49,11 +49,11 @@ The new procedure using these two sets is then:
 
 To compute the test set error:
 
-![The test set error](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/The-test%20set%20error.png)
+![The test set error](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/The-test%20set%20error.png)
 
 This gives us a binary 0 or 1 error result based on a misclassification. The average test error for the test set is:
 
-![Test Error](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Test-Error.png)
+![Test Error](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Test-Error.png)
 
 This gives us the proportion of the test data that was misclassified.
 
@@ -93,7 +93,7 @@ High variance (overfitting): the training error is low, but the cross validation
 
 The is summarized in the figure below:
 
-![Diagnosing Bias vs. Variance](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Diagnosing-Bias%20vs.%20Variance.png)
+![Diagnosing Bias vs. Variance](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Diagnosing-Bias%20vs.%20Variance.png)
 
 ## Regularization and Bias/Variance
 
@@ -106,7 +106,7 @@ How do we choose our parameter λ to get it 'just right'? In order to choose the
 5. Select the best combo that produces the lowest error on the cross validation set.
 6. Using the best combo Θ and λ, apply it on the test cost function and calculate the error to see if it has a good generalization of the problem.
 
-![Regularization and Bias/Variance](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Regularization-and%20BiasVariance.png)
+![Regularization and Bias/Variance](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Regularization-and%20BiasVariance.png)
 
 ## Learning Curves
 
@@ -123,7 +123,7 @@ Training an algorithm on a very few number of data points (such as 1, 2 or 3) wi
 
 **If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much.**
 
-![Typical Learning Curve for High Bias](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Typical-Learning%20Curve%20for%20High%20Bias.png)
+![Typical Learning Curve for High Bias](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Typical-Learning%20Curve%20for%20High%20Bias.png)
 
 **Experiencing high variance:**
 
@@ -133,7 +133,7 @@ Training an algorithm on a very few number of data points (such as 1, 2 or 3) wi
 
 **If a learning algorithm is suffering from high variance, getting more training data is likely to help.**
 
-![Typical Learning Curve for High Variance](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Typical-Learning%20Curve%20for%20High%20Variance.png)
+![Typical Learning Curve for High Variance](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Typical-Learning%20Curve%20for%20High%20Variance.png)
 
 ## Neural Networks and Overfitting
 

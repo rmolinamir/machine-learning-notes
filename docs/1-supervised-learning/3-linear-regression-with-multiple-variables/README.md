@@ -15,7 +15,7 @@ Using the definition of matrix multiplication, our multivariable hypothesis func
 
 The following image compares gradient descent with one variable to gradient descent with multiple variables:
 
-![Linear Regression with Multiple Variables Equation Comparison](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Linear-Regression%20with%20Multiple%20Variables%20Equation%20Comparison.png)
+![Linear Regression with Multiple Variables Equation Comparison](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Linear-Regression%20with%20Multiple%20Variables%20Equation%20Comparison.png)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -41,15 +41,15 @@ We can speed up gradient descent by having each of our input values in roughly t
 
 The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally:
 
-![Feature Scaling Range 1](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Range%201.png)
+![Feature Scaling Range 1](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Range%201.png)
 
-![Feature Scaling Range 2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Range%202.png)
+![Feature Scaling Range 2](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Range%202.png)
 
 These aren't exact requirements; we are only trying to speed things up. The goal is to get all input variables into roughly one of these ranges, give or take a few.
 
 Two techniques to help with this are feature scaling and mean normalization. Feature scaling involves dividing the input values by the range (i.e. the maximum value minus the minimum value) of the input variable, resulting in a new range of just 1. Mean normalization involves subtracting the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just zero. To implement both of these techniques, adjust your input values as shown in this formula:
 
-![Feature Scaling Equation](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Equation.png)
+![Feature Scaling Equation](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Equation.png)
 
 Where <i>μ<sub>i</sub></i> is the average of all the values for feature (i) and <i>s<sub>i</sub></i> is the range of values (max - min), or <i>s<sub>i</sub></i> is the standard deviation.
 
@@ -57,7 +57,7 @@ Note that dividing by the range, or dividing by the standard deviation, give dif
 
 For example, if Xi represents housing prices with a range of 100 to 2000  and a mean value of 1000, then:
 
-![Feature Scaling Equation Example](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Equation%20Example.png)
+![Feature Scaling Equation Example](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Equation%20Example.png)
 
 ## Gradient Descent in Practice I: Learning Rate
 
@@ -86,7 +86,7 @@ In the cubic version, we have created new features x<sub>2</sub> and x<sub>3</su
 
 To make it a square root function, we could do:
 
-![Features and Polynomial Regression Square Root Function](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Features-and%20Polynomial%20Regression%20Square%20Root%20Function.png)
+![Features and Polynomial Regression Square Root Function](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Features-and%20Polynomial%20Regression%20Square%20Root%20Function.png)
 
 One important thing to keep in mind is, if you choose your features this way then feature scaling becomes very important. For example, if x<sub>1</sub> has range 1 - 1000 then range of x<sub>1</sub><sup>2</sup> becomes 1 - 1000000 and that of x<sub>1</sub><sup>3</sup> becomes 1 - 1000000000.
 
@@ -129,17 +129,17 @@ Solutions to the above problems include deleting a feature that is linearly depe
 
 Here's our usual hypothesis for linear regression:
 
-![Hypothesis for Linear Regression](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Hypothesis-for%20Linear%20Regression.png)
+![Hypothesis for Linear Regression](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Hypothesis-for%20Linear%20Regression.png)
 
 And if you want to compute h(x), notice that there's a sum on the right. And so one thing you could do is, compute the sum from `j = 0` to `j = n` yourself. Another way to think of this is to think of h(x) as theta transpose X (<i>h<sub>θ</sub>(x) = θ<sup>T</sup>X</i>), and what you can do is, think of this as you are computing this inner product between two vectors where theta is your vector, say, theta 0, theta 1, theta 2. If you have two features, if n equals two, and if you think x as this vector, x0, x1, x2, and these two views can give you two different implementations.
 
 In contrast, here's how you would write a vectorized implementation, which is that you would think of a x and theta as vectors. You just said prediction = theta' * x. You're just computing like so. So instead of writing all these lines of code with a for loop, you instead just have one line of code.
 
-![Hypothesis Implementation: Vectorization 1.1](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Hypothesis-Implementation%20Vectorization%201.1.png)
+![Hypothesis Implementation: Vectorization 1.1](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Hypothesis-Implementation%20Vectorization%201.1.png)
 
 In order to achieve the hypothesis for all the samples as a list, we use the following array dot product:
 
-![Hypothesis Implementation: Vectorization 1.2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Hypothesis-Implementation%20Vectorization%201.2.png)
+![Hypothesis Implementation: Vectorization 1.2](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Hypothesis-Implementation%20Vectorization%201.2.png)
 
 The code achievement is pretty easy and clean:
 
@@ -154,17 +154,17 @@ hypo = X @ theta
 
 Based on the vectorization of hypothesis, we can easily vectorize the cost function as:
 
-![Cost function Implementation: Vectorization](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Cost-function%20Implementation%20Vectorization.png)
+![Cost function Implementation: Vectorization](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Cost-function%20Implementation%20Vectorization.png)
 
 ### Cost Function Derivation Vectorization
 
 The derivation of cost function regards to each θ can be vectorized as:
 
-![Cost function Implementation: Vectorization 1.1](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Cost-function%20Implementation%20Vectorization%201.1.png)
+![Cost function Implementation: Vectorization 1.1](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Cost-function%20Implementation%20Vectorization%201.1.png)
 
 The derivation of cost function to all θ can be vectorized as:
 
-![Cost function Implementation: Vectorization 1.2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Cost-function%20Implementation%20Vectorization%201.2.png)
+![Cost function Implementation: Vectorization 1.2](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Cost-function%20Implementation%20Vectorization%201.2.png)
 
 ### "Side" Mentions
 

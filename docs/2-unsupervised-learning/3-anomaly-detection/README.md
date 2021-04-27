@@ -26,15 +26,15 @@ Anomaly detection is widely used in monitoring operations such as fraud detectio
 
 Anomaly detection is a reasonably commonly used type of machine learning application, it can be thought of as a solution to an unsupervised learning problem but it also has aspects of supervised learning. What is anomaly detection? Imagine you're an aircraft engine manufacturer, as engines roll off your assembly line you're doing QA to measure certain features from engines (e.g. vibration and heat generated of/by the engines), you now have a dataset of x<sup>1</sup> to x<sup>m</sup> examples, i.e. <i>m</i> engines were tested. Say we plot that dataset:
 
-![Problem Motivation Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20I.png)
+![Problem Motivation Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20I.png)
 
 Then, a new engine is measured. An anomaly detection method is used to see if the new engine is anomalous compared to the previous engines. When plotted it looks *probably* fine, the new engine looks like this:
 
-![Problem Motivation Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20II.png)
+![Problem Motivation Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20II.png)
 
 Finally, we measure a new engine that looks like this, which looks like an **anomalous data-point**:
 
-![Problem Motivation Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20III.png)
+![Problem Motivation Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20III.png)
 
 More formally, we have a dataset which contains normally distributed data. It's up to us how to ensure they're normally distributed, and using that dataset as a reference point we can see whether other examples are anomalous. In reality, if the data is not normally distributed then it should be fine as well.
 
@@ -47,7 +47,7 @@ In summary:
 
 The parameter ε is a threshold for the probability value which determines whether or not the data point is an anomaly, and it is defined by us depending on how strict we want the model to be. We expect our model to (graphically) look something like this:
 
-![Problem Motivation Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20IV.png)
+![Problem Motivation Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20IV.png)
 
 ## Applications
 
@@ -117,13 +117,13 @@ p(x<sub>i</sub>; μ<sub>i</sub>, σ<sub>i</sub><sup>2</sup>) is the probability 
 
 We can write this chain of multiplication more compactly as follows:
 
-![Algorithm Model](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Model.png)
+![Algorithm Model](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Model.png)
 
 Where Π is the product of a set of values.
 
 With these concepts in mind, the algorithm can be executed as follows:
 
-![Algorithm Implementation](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Implementation.png)
+![Algorithm Implementation](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Implementation.png)
 
 1. Chose features:
    - Try to come up with features which might help identify something anomalous - may be unusually large or small values.
@@ -141,7 +141,7 @@ For example:
 
 Given features x<sub>1</sub> and x<sub>2</sub> where:
 
-![Algorithm Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Example%20II.png)
+![Algorithm Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Example%20II.png)
 
 - x<sub>1</sub>:
   - Mean is about 5.
@@ -152,11 +152,11 @@ Given features x<sub>1</sub> and x<sub>2</sub> where:
 
 If we plot the Gaussian for x<sub>1</sub> and x<sub>2</sub> we get a figure like this:
 
-![Algorithm Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Example%20III.png)
+![Algorithm Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Example%20III.png)
 
 If you plot the product of these models, you get a surface plot like this:
 
-![Algorithm Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Example%20IV.png)
+![Algorithm Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Example%20IV.png)
 
 - With this surface plot, the height of the surface is the probability - p(x).
 - We can't always do surface plots, but for this example it's quite a nice way to show the probability of a 2D feature vector.
@@ -277,11 +277,11 @@ Plotting a histogram of the data to check it has a Gaussian distribution is a ni
 
 Non-Gaussian data might look like this:
 
-![Choosing What Features to Use Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Choosing-What%20Features%20to%20Use%20Example%20I.png)
+![Choosing What Features to Use Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Choosing-What%20Features%20to%20Use%20Example%20I.png)
 
 We can transform the data to make it look more like a Gaussian distribution so it's also very useful to also visualize the data. We can play with different transformations of the data to make it look more Gaussian, i.e. if you have some feature x<sub>1</sub>, replace it with log(x<sub>1</sub>), log(x<sub>1</sub> + c), or with x<sub>1</sub><sup>1/2</sup>, x<sub>1</sub><sup>1/3</sup>. After transforming the data, it might look like this:
 
-![Choosing What Features to Use Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Choosing-What%20Features%20to%20Use%20Example%20II.png)
+![Choosing What Features to Use Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Choosing-What%20Features%20to%20Use%20Example%20II.png)
 
 If you plot a histogram with the data, and find that it looks pretty non-Gaussian, it's worth playing around a little bit with different transformations like these, to see if you can make your data look a little bit more Gaussian, before you feed it to your learning algorithm, although even if you don't, it might work okay.
 
@@ -295,7 +295,7 @@ Just like in a supervised learning error analysis procedure we:
 
 For example, in the picture below we have computed the normal distribution of one feature, and our anomalous example (green cross) is in a place where usually you'd expect values to be non-anomalous (e.g. close to the mean):
 
-![Choosing What Features to Use Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Choosing-What%20Features%20to%20Use%20Example%20III.png)
+![Choosing What Features to Use Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Choosing-What%20Features%20to%20Use%20Example%20III.png)
 
 To deal we this, we can:
 
@@ -317,17 +317,17 @@ So we implement a new feature that represents CPU load/network traffic (CPU load
 
 This is a slightly different technique which can sometimes catch some anomalies in cases where non-multivariate Gaussian distribution anomaly detection systems fails to. An unlabeled data set looks like this:
 
-![Multivariate Gaussian Distribution Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20I.png)
+![Multivariate Gaussian Distribution Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20I.png)
 
 Say you can fit a Gaussian distribution to CPU load and memory use, in the test set we have an example which looks like an anomaly (e.g. x<sub>1</sub> = 0.4, x<sub>2</sub> = 1.5). As shown in the picture below, this example (green cross) has high memory and low CPU load (if we plot x<sub>1</sub> vs. x<sub>2</sub>, this example is far away from the others).
 
-![Multivariate Gaussian Distribution Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20II.png)
+![Multivariate Gaussian Distribution Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20II.png)
 
 Problem is, if we look at each feature individually they fall within acceptable limits - but if we analyse both features of this example collectively, we realize we shouldn't be getting those kind of values even though or prediction model is not flaggin this example as anomalous.
 
 This is because our function computes the probability prediction in concentric circles (like a contour plot), it thinks that everything in each of the circular regions have about an equal probability, and it doesn't realize that the example (green cross) actually has much lower probability than the others.
 
-![Multivariate Gaussian Distribution Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20III.png)
+![Multivariate Gaussian Distribution Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20III.png)
 
 To address this we develop the multivariate Gaussian distribution where we model p(x) all in one go, instead of each feature separately.
 
@@ -338,7 +338,7 @@ The parameters for this new model are:
 
 The formula for the multivariate Gaussian distribution is as follows:
 
-![Multivariate Gaussian Distribution Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20IV.png)
+![Multivariate Gaussian Distribution Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20IV.png)
 
 Where:
 
@@ -346,27 +346,27 @@ Where:
 
 More importantly, what do the parameters of our prediction model p(x) look like? In a 2D example, our parameters could look like this:
 
-![Multivariate Gaussian Distribution Example VI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20VI.png)
+![Multivariate Gaussian Distribution Example VI](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20VI.png)
 
 Where Sigma is sometimes call the identity matrix. After computing p(x), our model would look like this:
 
-![Multivariate Gaussian Distribution Example VII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20VII.png)
+![Multivariate Gaussian Distribution Example VII](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20VII.png)
 
 Where the height of the surface indicates the value of p(x) and it's determined by the features x<sub>1</sub> and x<sub>2</sub>.
 
 What happens to our probability model if we change Sigma (e.g. the identify matrix) to look like this?
 
-![Multivariate Gaussian Distribution Example VIII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20VIII.png)
+![Multivariate Gaussian Distribution Example VIII](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20VIII.png)
 
-![Multivariate Gaussian Distribution Example IX](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20IX.png)
+![Multivariate Gaussian Distribution Example IX](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20IX.png)
 
 What you get is that the width of the bump diminishes and its height increases. So if we set Sigma to be different values, we change the shape of our graph.
 
-![Multivariate Gaussian Distribution Example X](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20X.png)
+![Multivariate Gaussian Distribution Example X](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20X.png)
 
 Using these values we can, therefore, define the shape of this to better fit the data, rather than assuming symmetry in every dimension. One of the cool things is you can use it to model correlation between data, if you start to change the off-diagonal values in the covariance matrix you can control how well the various dimensions correlation:
 
-![Multivariate Gaussian Distribution Example XI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20XI.png)
+![Multivariate Gaussian Distribution Example XI](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20XI.png)
 
 - In the final example, we can see that it computes a very tall thin distribution, i.e. it shows a strong positive correlation.
 - We can also make the off-diagonal values negative to produce a negative correlation.
@@ -378,7 +378,7 @@ This shows an example of the kinds of distribution you can get by varying the pa
 
 Previously, we saw some examples of the kinds of distributions you can model, now let's take those ideas and look at applying them to different anomaly detection algorithms. As mentioned, multivariate Gaussian modeling uses the following equation:
 
-![Anomaly Detection using the Multivariate Gaussian Distribution Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20I.png)
+![Anomaly Detection using the Multivariate Gaussian Distribution Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20I.png)
 
 Which comes with the parameters μ and Σ, where:
 
@@ -387,22 +387,22 @@ Which comes with the parameters μ and Σ, where:
 
 To fit our parameters, we can estimate their optimum values depending on our examples. If we have a set of examples: {x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ...x<sub>n</sub>}, then the formulas for estimating our μ and Σ parameters are:
 
-![Anomaly Detection using the Multivariate Gaussian Distribution Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20II.png)
-![Anomaly Detection using the Multivariate Gaussian Distribution Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20III.png)
+![Anomaly Detection using the Multivariate Gaussian Distribution Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20II.png)
+![Anomaly Detection using the Multivariate Gaussian Distribution Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20III.png)
 
 With this formulas in mind, the algorithm to compute a multivariate Gaussian distribution model would follow this process:
 
 1. Calculate μ and Σ using the formula above with the training data set.
 2. Given a new example (x<sub>test</sub>, represented by the green cross) - see below, compute p(x) using the following formula for multivariate distribution:
-    ![Anomaly Detection using the Multivariate Gaussian Distribution Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20IV.png)
-    ![Anomaly Detection using the Multivariate Gaussian Distribution Example V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20V.png)
+    ![Anomaly Detection using the Multivariate Gaussian Distribution Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20IV.png)
+    ![Anomaly Detection using the Multivariate Gaussian Distribution Example V](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20V.png)
 3. Compare the value with the threshold probability value, ε:
    - If <i>p(x<sub>test</sub>) < ε</i>: An anomaly.
    - If <i>p(x<sub>test</sub>) >= ε</i>: Not an anomaly.
 
 Our model would end up looking similar to this:
 
-![Anomaly Detection using the Multivariate Gaussian Distribution Example VI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20VI.png)
+![Anomaly Detection using the Multivariate Gaussian Distribution Example VI](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20VI.png)
 
 Which means it's likely to identify the green value as anomalous. Finally, we should mention how multivariate Gaussian relates to our original simple Gaussian model (where each feature is looked at individually).
 
@@ -410,7 +410,7 @@ The original model corresponds to a multivariate Gaussian where the Gaussians' c
 
 This can be shown mathematically with the constraint that the covariance matrix sigma has zero values on the non-diagonal values:
 
-![Anomaly Detection using the Multivariate Gaussian Distribution Example VII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20VII.png)
+![Anomaly Detection using the Multivariate Gaussian Distribution Example VII](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20VII.png)
 
 If you compute the multivariate model with these parameters, it would end up being identical to the normal Gaussian model.
 

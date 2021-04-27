@@ -24,12 +24,14 @@
     "cli-spinner": "^0.2.10",
     "doctoc": "2.0.0",
     "jsdom": "^16.2.0",
-    "marked": "^0.8.0"
+    "marked": "^0.8.0",
+    "url-join": "4.0.1"
   },
   "devDependencies": {
     "@types/cli-spinner": "^0.2.0",
     "@types/jsdom": "^16.1.0",
     "@types/marked": "^0.7.2",
-    "@types/node": "^13.7.7"
+    "@types/node": "^13.7.7",
+    "@types/url-join": "4.0.0"
   }
 }

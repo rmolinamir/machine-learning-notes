@@ -22,13 +22,13 @@ Data Compression speeds up algorithms and reduces space used by data for them. B
 
 Let's say you've collected many features - maybe more than you need. Can you "simplify" your data set in a rational and useful way? For example, a redundant two dimensional data set - different units for the same attribute (e.g. centimeters and inches), we reduce data to 1D from 2D.
 
-![Data Compression Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20I.png)
+![Data Compression Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20I.png)
 
 Data redundancy can happen when different teams are working independently, this often generates redundant data (especially if you don't control the data collection). Another example is helicopter flying - if we do a survey of pilots (where x<sub>1</sub> is pilot skill, x<sub>2</sub> is pilot enjoyment). These features may be highly correlated, so this correlation can be combined into a single attribute called aptitude (for example).
 
 To perform dimensionality reduction, let's plot a line in the following example, and project each example into the line:
 
-![Data Compression Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20II.png)
+![Data Compression Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20II.png)
 
 Before x<sub>1</sub> was a 2D feature vector (X and Y dimensions), now we can represent x<sub>1</sub> as a 1D number (Z dimension).
 
@@ -36,11 +36,11 @@ This allows us to half the amount of storage, gives lossy compression with hopef
 
 Another example of 3D data to 2D:
 
-![Data Compression Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20III.png)
+![Data Compression Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20III.png)
 
 We can project all of the 3 dimensional vectors (or points) in a 2D plane within the 3 dimensional space, by computing the distance from the vectors to the plane and projecting them in said plane, and we end up with a 2D visualization of the data. This is similar to the line projection in the previous 2D to 1D example.
 
-![Data Compression Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20IV.png)
+![Data Compression Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20IV.png)
 
 So we've now reduced our 3D vector to a 2D vector. In reality we'd normally try and do reduce, for example, 1000D to 100D.
 
@@ -50,7 +50,7 @@ It's hard to visualize highly dimensional data. Dimensionality reduction can imp
 
 For example, we collect a large data set about many facts of a country around the world:
 
-![Visualization Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Visualization-Example%20I.png)
+![Visualization Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Visualization-Example%20I.png)
 
 Where:
 
@@ -60,13 +60,13 @@ Where:
 
 Let's say that we have 50 features per country, how can we understand this data better? It's very hard to plot 50 dimensional data. Using dimensionality reduction, instead of each country being represented by a 50-dimensional feature vector, we can come up with a different feature representation (z values) which summarize these features.
 
-![Visualization Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Visualization-Example%20II.png)
+![Visualization Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Visualization-Example%20II.png)
 
 This gives us a 2 dimensional vector, where we reduced the data from 50D to 2D. And we can plot the result. Typically you don't generally ascribe meaning to the new features (so we have to determine what these summary values mean) e.g. you may find horizontal axis corresponds to overall country size/economic activity and that the y axis may be the per-capita well being/economic activity. So despite having 50 features, there may be two "dimensions" of information, with features associated with each of those dimensions.
 
 It's up to you on how to assess in which way the features can be grouped to form summary features, and how best to do that (feature scaling is very important). This helps in showing the two main dimensions of variation in a way that's easy to understand.
 
-![Visualization Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Visualization-Example%20III.png)
+![Visualization Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Visualization-Example%20III.png)
 
 ## Principle Component Analysis (PCA) Problem Formulation
 
@@ -170,7 +170,7 @@ PCA works as a compression algorithm. f this is the case, is there a way to deco
 
 Say we have an example as follows:
 
-![Reconstruction from Compressed Representation Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Reconstruction-from%20Compressed%20Representation%20Example%20I.png)
+![Reconstruction from Compressed Representation Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Reconstruction-from%20Compressed%20Representation%20Example%20I.png)
 
 - We have our examples (x<sup>1</sup>, x<sup>2</sup> etc.).
 - Project onto z-surface.
@@ -182,7 +182,7 @@ Considering that <i>z = U<sub>reduce</sub><sup>T</sup> * x</i>, we can calculate
 
 This would project the values of the K dimensional space back onto the unitary vector(s), in this case onto the line, and thus, this creates the following representation:
 
-![Reconstruction from Compressed Representation Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Reconstruction-from%20Compressed%20Representation%20Example%20I.png)
+![Reconstruction from Compressed Representation Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Reconstruction-from%20Compressed%20Representation%20Example%20I.png)
 
 We lose some of the information (i.e. everything is now perfectly on that line) but it is now projected back into the 2D space. The lost information can be measured by a number called *variance*.
 
@@ -190,15 +190,15 @@ We lose some of the information (i.e. everything is now perfectly on that line) 
 
 How do we chose K? K is referred to as the number of principle components. To chose K, let's think about how PCA works. PCA tries to minimize the averaged squared projection error:
 
-![Choosing the number of Principle Components Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20I.png)
+![Choosing the number of Principle Components Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20I.png)
 
 And the average square sum of our data:
 
-![Choosing the number of Principle Components Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20II.png)
+![Choosing the number of Principle Components Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20II.png)
 
 The total variation in the data can be defined as the average squared projection error over average the sum of our data, denoting how far are the training examples from the origin. Therefore:
 
-![Choosing the number of Principle Components Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20III.png)
+![Choosing the number of Principle Components Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20III.png)
 
 This is the ratio between averaged squared projection error in relation to the total variation in the data. We want the ratio to be small - less than 0.01 (or 1%) means that we retain 99% of the variance.
 
@@ -206,7 +206,7 @@ If the ratio is small (close to 0), then this is because the numerator is small.
 
 So, we chose K in terms of this ratio. We can often significantly reduce data dimensionality while retaining the variance.
 
-![Choosing the number of Principle Components Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20IV.png)
+![Choosing the number of Principle Components Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20IV.png)
 
 ## Advice for Applying PCA
 

@@ -22,11 +22,11 @@ Learning with large data sets comes with its own unique problems, specifically, 
 
 In a prior section, we delved into a study that concluded with the idea that so long as you feed multiple algorithms with large amounts of data, they end up performing very similarly. And so it's results like these that has led to the saying in machine learning that *often it's not who has the best algorithm that wins, it's who has the most data*.
 
-![Learning With Large Datasets Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20I.png)
+![Learning With Large Datasets Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20I.png)
 
 But learning with large datasets comes with its own computational problems, fFor example, say we have a data set where m = 100.000.000. This is pretty realistic for many modern data sets such as cnesus data, or website traffic data. **How do we train a logistic regression model on such a big system?**
 
-![Learning With Large Datasets Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20II.png)
+![Learning With Large Datasets Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20II.png)
 
 In the typical gradient descent, you would have to sum over 100.000.000 examples per iteration of the gradient descent. Because of the computational cost of this massive summation, we'll look at more efficient ways around this by either:
 
@@ -39,7 +39,7 @@ If this is the case you can avoid a lot of the headaches associated with big dat
 
 For example, if our plot looked like this:
 
-![Learning With Large Datasets Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20III.png)
+![Learning With Large Datasets Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20III.png)
 
 - This looks like a high bias problem.
 - More examples may not actually help, it would save a lot of time and effort if we know this before hand.
@@ -49,7 +49,7 @@ For example, if our plot looked like this:
 
 But, if our plot looked like this:
 
-![Learning With Large Datasets Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20IV.png)
+![Learning With Large Datasets Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20IV.png)
 
 - Looks like a high variance problem, which means that the model is overfitted to the training set but is bad at predicting examples outside the training set.
 - More examples should improve performance, but large data sets means we have to deal with a new set of problems.
@@ -61,21 +61,21 @@ When you have a large dataset, gradient descent becomes very expensive, so we'll
 Suppose you're training a linear regression model with gradient descent:
 
 - **Hypothesis:**
-  ![Learning With Large Datasets V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20V.png)
+  ![Learning With Large Datasets V](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20V.png)
 - **Cost function:**
-  ![Learning With Large Datasets VI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20VI.png)
+  ![Learning With Large Datasets VI](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20VI.png)
 - If we plot our two parameters vs. the cost function we get something like a bowl shaped surface plot:
-![Learning With Large Datasets VII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20VII.png)
+![Learning With Large Datasets VII](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20VII.png)
 
 Remember that gradient descent works by looping over a number of iterations that repeatedly update the parameters θ.
 
-![Learning With Large Datasets VIII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20VIII.png)
+![Learning With Large Datasets VIII](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20VIII.png)
 
 But in contrast, let's apply a stochastic gradient descent to our linear regression example (the ideas apply to other algorithms too such as Logistic Regression and Neural Networks).
 
 Below we have a contour plot for a typical gradient descent showing iteration to a global minimum:
 
-![Learning With Large Datasets IX](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20IX.png)
+![Learning With Large Datasets IX](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20IX.png)
 
 As mentioned, if m is large, gradient descent can be very computationally expensive. Although so far we just referred to it as gradient descent, this kind of gradient descent is called **batch gradient descent**, which just means we look at all the examples at the same time.
 
@@ -92,30 +92,30 @@ What we're going to do here is come up with a different algorithm which only nee
 
 To apply stochastic gradient descent, let's define our cost function slightly differently:
 
-![Stochastic Gradient Descent Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20I.png)
+![Stochastic Gradient Descent Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20I.png)
 
 The function represents the cost of θ with respect to a specific example (x<sup>i</sup>, y<sup>i</sup>), and we calculate this value as one half times the squared error on that example.
 
 It measures how well the hypothesis works on *a single example*. Thus, the overall cost function can now be re-written in the following form:
 
-![Stochastic Gradient Descent Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20II.png)
+![Stochastic Gradient Descent Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20II.png)
 
 This is equivalent to the batch gradient descent cost function. With this slightly modified (but equivalent) view of linear regression we can write out how stochastic gradient descent works:
 
 1. Randomly shuffle the data set.
-  ![Stochastic Gradient Descent Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20III.png)
+  ![Stochastic Gradient Descent Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20III.png)
 2. For each example, compute the gradient and perform a gradient descent step towards the global optima, then update θ, and finally this process is repeated for a few iterations (but sometimes even 1 might be enough, typically it's done 1-10 times).
-  ![Stochastic Gradient Descent Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20IV.png)
+  ![Stochastic Gradient Descent Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20IV.png)
 
 Let's break this down.
 
 - The *randomly shuffling* at the start means we ensure the data is in a random order so we don't bias the descent towards global optima.
   - Randomization should speed up convergence a little bit.
 - The term:
-  ![Stochastic Gradient Descent Example V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20V.png)
+  ![Stochastic Gradient Descent Example V](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20V.png)
   - Is the same as that found in the summation for batch gradient descent.
   - It's possible to show that this term is equal to the partial derivative with respect to the parameter θ<sub>j</sub> of the cost(θ, (x<sup>i</sup>, y<sup>i</sup>)) function.
-    ![Stochastic Gradient Descent Example VI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20VI.png)
+    ![Stochastic Gradient Descent Example VI](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20VI.png)
 - What the stochastic gradient descent algorithm is doing is going through each example one at a time while updating θ, the inner loop is doing the following:
   - Looking at example 1, take a step with respect to the cost of just the 1st training example.
   - Having done this, we go on to the second training example.
@@ -129,11 +129,11 @@ This means we update the parameters on EVERY step through data, instead of at th
 
 As we saw, batch gradient descent does something like this to get to a global minimum:
 
-![Stochastic Gradient Descent Example VII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20VII.png)
+![Stochastic Gradient Descent Example VII](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20VII.png)
 
 With stochastic gradient descent every iteration is much faster, but every iteration is flitting a single example:
 
-![Stochastic Gradient Descent Example VIII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20VIII.png)
+![Stochastic Gradient Descent Example VIII](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20VIII.png)
 
 - What you find is that you "generally" move in the direction of the global minimum, but not always.
 - It also never converges like the batch gradient descent does, but ends up wandering around some region close to the global minimum.
@@ -159,7 +159,7 @@ It's just like the batch gradient descent, except we use tiny batches. A typical
 
 ### Mini-Batch Gradient Descent Algorithm
 
-![Mini-Batch Gradient Descent Algorithm Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Mini-Batch-Gradient%20Descent%20Algorithm%20Example%20I.png)
+![Mini-Batch Gradient Descent Algorithm Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Mini-Batch-Gradient%20Descent%20Algorithm%20Example%20I.png)
 
 - We for-loop through b-size batches of m.
 - Compared to batch gradient descent this allows us to get through data in a much more efficient way.
@@ -187,7 +187,7 @@ With stochastic gradient descent, we don't want to have to pause the algorithm p
 For stochastic gradient descent, we have to do something different:
 
 - Take cost function definition where we have one half the squared error on a single example:
-  ![Stochastic Gradient Descent Convergence Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20I.png)
+  ![Stochastic Gradient Descent Convergence Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20I.png)
   - While the algorithm is looking at the example (x<sup>i</sup>, y<sup>i</sup>) we can compute the cost of the example (cost(θ, (x<sup>i</sup>, y<sup>i</sup>))) before it has updated θ.
     - In other words, we compute how well the hypothesis is working on the training example, **but we eed to do this before we update θ**.  If we did it *after θ* was updated the algorithm would be performing a bit better when computing the cost.
   - To check for the convergence, every 1000 iterations we can plot the costs averaged over the last 1000 examples.
@@ -198,25 +198,25 @@ These plots would look like the pictures below. In general, the plots might be a
 
 If you get a figure like this:
 
-![Stochastic Gradient Descent Convergence Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20I.png)
+![Stochastic Gradient Descent Convergence Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20I.png)
 
 - This plot indicates a pretty decent run.
 - The algorithm may have reached convergence.
 
 If you use a smaller learning rate you may get an even better final solution:
 
-![Stochastic Gradient Descent Convergence Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20II.png)
+![Stochastic Gradient Descent Convergence Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20II.png)
 
 - This is because the parameter oscillates around the global minimum.
 - A smaller learning rate means smaller oscillations.
 
 If you average over 1000 examples and 5000 examples you may get a smoother curve:
 
-![Stochastic Gradient Descent Convergence Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20III.png)
+![Stochastic Gradient Descent Convergence Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20III.png)
 
 - This disadvantage of a larger average means you get less frequent feedback
 
-![Stochastic Gradient Descent Convergence Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20IV.png)
+![Stochastic Gradient Descent Convergence Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20IV.png)
 
 - It looks like the cost is not decreasing at all (blue line).
 - But if you then increase to average over a larger number of examples you do see this general trend (red line).
@@ -225,13 +225,13 @@ If you average over 1000 examples and 5000 examples you may get a smoother curve
 
 If you see a curve the looks like its increasing then the algorithm may be displaying divergence:
 
-![Stochastic Gradient Descent Convergence Example V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20V.png)
+![Stochastic Gradient Descent Convergence Example V](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20V.png)
 
 - Should use a smaller learning rate.
 
 We saw that with stochastic gradient descent the θ oscillate around the global minimum, never converging. In most implementations the learning rate is held constant:
 
-![Stochastic Gradient Descent Convergence Example VI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20VI.png)
+![Stochastic Gradient Descent Convergence Example VI](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20VI.png)
 
 However, if you want to converge to a minimum you can slowly decrease the learning rate over time, a classic way of doing this is to calculate α as follows:
 
@@ -239,4 +239,4 @@ However, if you want to converge to a minimum you can slowly decrease the learni
 
 But you would need to determine `const1` and `const2`. However, if you tune the parameters well, you can get the algorithm to convert like this:
 
-![Stochastic Gradient Descent Convergence Example VII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20VII.png)
+![Stochastic Gradient Descent Convergence Example VII](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20VII.png)

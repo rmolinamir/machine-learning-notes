@@ -26,18 +26,18 @@ Let's say I have some training set, and we start by splitting the training sets 
 - Machine 1: use (x<sup>1</sup>, y<sup>1</sup>), ..., (x<sup>100</sup>, y<sup>100</sup>).
   - Uses first quarter of training set
   - Just does the summation for the first 100
-  ![Map Reduce Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20I.png)
+  ![Map Reduce Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20I.png)
 
 - Similarly for the rest of the machines:
-  ![Map Reduce Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20II.png)
+  ![Map Reduce Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20II.png)
 
 Each of these `temp` values are partial sums of the gradient. So now we have these four values, and each machine does 1/4 of the work, we send these values to a centralized master server, put them back together, and update θ using:
 
-![Map Reduce Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20III.png)
+![Map Reduce Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20III.png)
 
 This equation is doing the same as our original batch gradient descent algorithm. More generally map reduce uses the following scheme (e.g. where you split into 4):
 
-![Map Reduce Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20IV.png)
+![Map Reduce Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20IV.png)
 
 The bulk of the work in gradient descent is the summation, but now, because each of the computers does a quarter of the work at the same time, you get a 4x speedup. In reality, because of network latency and combining the results, it's slightly less than 4x, but close.
 
@@ -47,11 +47,11 @@ Another example:
 
 Using an advanced optimization algorithm with logistic regression:
 
-![Map Reduce Example V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20V.png)
+![Map Reduce Example V](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20V.png)
 
 Now we need to calculate cost function, so we split the training set into `x` machines, and these `x` machines compute the sum of the value over `1/x`<sup>th</sup> of the data.
 
-![Map Reduce Example VI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20VI.png)
+![Map Reduce Example VI](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20VI.png)
 
 These terms are also a sum over the training set, we're using the same approach. We send the resulting `temp` values to a central server to deal with combining everything.
 

@@ -34,7 +34,7 @@ Sometimes people refer to SVM as large margin classifiers. We'll consider what t
 
 The SVM cost function is as below:
 
-![SVM ](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-.png)
+![SVM ](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-.png)
 
 Unlike logistic, <i>h<sub>θ</sub>(x)</i> doesn't give us a probability, but instead we get a direct prediction of 1 or 0
 So if <i>θ<sup>T</sup>X</i> is equal to or greater than 0, then <i>h<sub>θ</sub>(x) = 1</i>, otherwise <i>h<sub>θ</sub>(x) = 0</i>. For logistic regression we had two terms;
@@ -46,13 +46,13 @@ So we could describe it as A + λB, and it needs some way to deal with the trade
 
 The SVM cost function is as above, and we've drawn out the cost terms below:
 
-![SVM Cost Terms](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Terms.png)
+![SVM Cost Terms](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Terms.png)
 
 Left is cost<sub>1</sub> and right is cost<sub>0</sub>. If you have a positive example, you only really need z to be greater or equal to 0, if this is the case then you predict 1. The SVM wants a bit more than that - doesn't want to *just* get it right, but have the value be quite a bit bigger than zero to throw in an extra safety margin factor, logistic regression does something similar.
 
 Consider a case where we set C to be huge number, such as C = 100,000. Considering we're minimizing CA + B, if C is huge we're going to pick an A value so that A is equal to zero, wat is the optimization problem here - how do we make A = 0? Making A = 0, if y = 1, then to make our "A" term 0 we need to find a value of θ so (<i>θ<sup>T</sup>X</i>) is greater than or equal to 1. Similarly, if y = 0, then we want to make "A" = 0 then we need to find a value of θ so (<i>θ<sup>T</sup>X</i>) is equal to or less than -1. If we think of our optimization problem a way to ensure that this first "A" term is equal to 0, we re-factor our optimization problem into just minimizing the "B" (regularization) term, because  when A = 0,  A*C = 0. Turns out when you solve this problem you get interesting decision boundaries:
 
-![SVM Decision Boundaries](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Decision%20Boundaries.png)
+![SVM Decision Boundaries](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Decision%20Boundaries.png)
 
 - The green and magenta lines are functional decision boundaries which could be chosen by logistic regression, but they probably don't generalize too well.
 - The black line, by contrast is the the chosen by the SVM because of this safety net imposed by the optimization graph. It's a more robust separator. Mathematically, that black line has a larger minimum distance (margin) from any of the training examples.
@@ -63,11 +63,11 @@ By separating with the largest margin you incorporate robustness into your decis
 
 Consider the training example below:
 
-![Mathematics Behind Large Margin Classification Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Mathematics-Behind%20Large%20Margin%20Classification%20Example%20I.png)
+![Mathematics Behind Large Margin Classification Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Mathematics-Behind%20Large%20Margin%20Classification%20Example%20I.png)
 
 Given this data, what boundary will the SVM choose? Note that we're still assuming <i>θ<sub>0</sub> = 0</i>, which means the boundary has to pass through the origin (0,0):
 
-![Mathematics Behind Large Margin Classification Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Mathematics-Behind%20Large%20Margin%20Classification%20Example%20II.png)
+![Mathematics Behind Large Margin Classification Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Mathematics-Behind%20Large%20Margin%20Classification%20Example%20II.png)
 
 SVM would not chose this line because the decision boundary comes very close to examples. **θ is always at 90 degrees to the decision boundary (can show with linear algebra, although we're not going to)**. After projecting a line from <i>x<sup>(1)</sup></i> on to to the θ vector (so it hits at 90 degrees), the distance between the intersection and the origin is (<i>p<sup>1</sup></i>) (the red line). Similarly, the second example (<i>x<sup>(2)</sup></i>) projects a line from <i>x<sup>2</sup></i> into to the θ vector. This is the magenta line, which will be negative (<i>p<sup>2</sup></i>).
 
@@ -77,7 +77,7 @@ The optimization objective is trying to find a set of parameters where the norm 
 
 So lets chose a different boundary:
 
-![Mathematics Behind Large Margin Classification Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Mathematics-Behind%20Large%20Margin%20Classification%20Example%20III.png)
+![Mathematics Behind Large Margin Classification Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Mathematics-Behind%20Large%20Margin%20Classification%20Example%20III.png)
 
 Now if you look at the projection of the examples to θ we find that <i>p<sup>1</sup></i> becomes large and ||θ|| can become small. This means that by choosing this second decision boundary we can make ||θ|| smaller, which is why the SVM choses this hypothesis as better.
 
@@ -85,7 +85,7 @@ Now if you look at the projection of the examples to θ we find that <i>p<sup>1<
 
 Suppose we have a training set and we want to find a non-linear boundary such as the one in the following image:
 
-![Kernels I Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20I.png)
+![Kernels I Example I](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20I.png)
 
 A way of writing this boundary would be to use a hypothesis that computes a decision boundary by taking the sum of the parameter vector multiplied by a new feature vector f, which simply contains the various high order x terms:
 
@@ -99,13 +99,13 @@ Where:
 
 These new features can be defined as similarity functions between x values and landmark values. Have a graph of <i>x<sub>1</sub></i> vs. <i>x<sub>2</sub></i>, then pick three points in that space:
 
-![Kernels I Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20II.png)
+![Kernels I Example II](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20II.png)
 
 These points l<sub>1</sub>, l<sub>2</sub>, and l<sub>3</sub>, which were chosen manually and are called landmarks. Given x, define f<sub>1</sub> as the similarity between (x, l<sub>1</sub>).
 
 The similarity function between x and the landmarks can be defined as:
 
-![Kernels I Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20III.png)
+![Kernels I Example III](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20III.png)
 
 Where:
 
@@ -128,7 +128,7 @@ This similarity function is called a kernel, and this similarity function in par
 
 If we plot this behavior, we get a plot like this:
 
-![Kernels I Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20IV.png)
+![Kernels I Example IV](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20IV.png)
 
 - Notice that when x = [3,5] then f1 = 1.
 - As x moves away from [3,5] then the feature takes on values close to zero.
@@ -136,7 +136,7 @@ If we plot this behavior, we get a plot like this:
 
 σ<sup>2</sup> is a parameter of the Gaussian kernel and it defines the steepness of the rise around the landmark. We see here that as you move away from [3,5] the feature f1 falls to zero much more slowly if σ<sup>2</sup> is equal to 3.
 
-![Kernels I Example V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20V.png)
+![Kernels I Example V](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20V.png)
 
 If each feature of our hypothesis is a similarity function between the x values and the landmark values, then we can draw a decision boundary, when for example: <i>θ<sub>0</sub> + θ<sub>1</sub>f<sub>1</sub> + θ<sub>2</sub>f<sub>2</sub> + θ<sub>3</sub>f<sub>3</sub> >= 0</i>
 
@@ -151,7 +151,7 @@ Imagine a point close to f1. We know being close to f1 will result in a value cl
 
 Considering our parameter, for points near l1 and l2 you predict 1, but for points near l3 you predict 0. Which means we create a non-linear decision boundary that goes like this:
 
-![Kernels I Example VI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20VI.png)
+![Kernels I Example VI](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20VI.png)
 
 Where:
 
@@ -180,17 +180,17 @@ When using the Gaussian kernel, somewhere along the line, we will get a f value 
 
 After obtaining the f vector, the lambda parameters can then be computed using the minimum cost function. Similarly to logistic regression when y = 1 means <i>θ<sup>T</sup>X >= 0</i>, when y = 1 means <i>θ<sup>T</sup>f >= 0</i>. That being said, the minimum cost function of the SVM learning algorithm would be:
 
-![SVM Cost Function](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Function.png)
+![SVM Cost Function](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Function.png)
 
 In this setup m = n, because number of features is the number of training data examples, and now the cost can be computed using f as the feature vector instead of x.
 
 One final mathematic detail, if we ignore <i>θ<sub>0</sub></i> then the following is true:
 
-![SVM Cost Function Theta Term](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Function%20Theta%20Term.png)
+![SVM Cost Function Theta Term](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Function%20Theta%20Term.png)
 
 But what many implementations do, is instead use this vectorization of theta:
 
-![SVM Cost Function Theta Vectorization](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Function%20Theta%20Vectorization.png)
+![SVM Cost Function Theta Vectorization](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Function%20Theta%20Vectorization.png)
 
 Where the matrix M depends on the kernel (e.g. Gaussian kernel). This results in a slightly different minimization or a rescaled version of θ. The reason this is done is because it results in a more efficient computation of the minimum costs for optimum theta parameters, and scale well to much bigger training sets. If you have a training set with 10000 values, then that means you get 10000 features. Solving for all these parameters can become expensive, so by adding this in we avoid a for loop and use a matrix multiplication algorithm instead.
 

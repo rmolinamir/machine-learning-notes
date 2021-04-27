@@ -6,11 +6,11 @@ So we have our hypothesis function and we have a way of measuring how well it fi
 
 Imagine that we graph our hypothesis function based on its fields &theta;<sub>0</sub> and &theta;<sub>1</sub> (actually we are graphing the cost function as a function of the parameter estimates). We are not graphing x and y itself, but the parameter range of our hypothesis function and the cost resulting from selecting a particular set of parameters.
 
-![Cost Function of Linear Regression](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Cost-Function%20of%20Linear%20Regression.png)
+![Cost Function of Linear Regression](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Cost-Function%20of%20Linear%20Regression.png)
 
 We put &theta;<sub>0</sub> on the x axis and &theta;<sub>1</sub> on the y axis, with the cost function on the vertical z axis. The points on our graph will be the result of the cost function using our hypothesis with those specific &theta;<sub> </sub>parameters. We will know that we have succeeded when our cost function is at the very bottom of the pits in our graph, i.e. when its value is the minimum.
 
-![Gradient Descent Graph](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Graph.png)
+![Gradient Descent Graph](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Graph.png)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -40,7 +40,7 @@ Where:
 
 At each iteration j, one should simultaneously update the parameters &theta;<sub>1</sub>, &theta;<sub>2</sub>, ..., &theta;<sub>n</sub>. Updating a specific parameter prior to calculating another one on the j<sup>(th)</sup> iteration would yield to a wrong implementation.
 
-![Gradient Descent Algorithm Iteration](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Algorithm%20Iteration.png)
+![Gradient Descent Algorithm Iteration](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Algorithm%20Iteration.png)
 
 ## Gradient Descent Intuition
 
@@ -48,11 +48,11 @@ If the learning rate α is too small, gradient descent can be slow. If the learn
 
 Gradient descent can converge to a local minimum, event with the learning rate α fixed. As we approach a local minimum, gradient descent will automatically take smaller steps. So, no need to decrease α over time.
 
-![Gradient Descent Intuition 1.1](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Intuition%201.1.png)
+![Gradient Descent Intuition 1.1](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Intuition%201.1.png)
 
-![Gradient Descent Intuition 1.2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Intuition%201.2.png)
+![Gradient Descent Intuition 1.2](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Intuition%201.2.png)
 
-![Gradient Descent Intuition 1.3](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Intuition%201.3.png)
+![Gradient Descent Intuition 1.3](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Intuition%201.3.png)
 
 On a side note, we should adjust our parameter α to ensure that the gradient descent algorithm converges in a reasonable time. Failure to converge or too much time to obtain the minimum value imply that our step size is wrong.
 
@@ -62,6 +62,6 @@ When specifically applied to the case of linear regression, a new form of the gr
 
 So, this is simply gradient descent on the original cost function J. This method looks at every example in the entire training set on every step, and is called batch gradient descent. Note that, while gradient descent can be susceptible to local minima in general, the optimization problem we have posed here for linear regression has only one global, and no other local, optima; thus gradient descent always converges (assuming the learning rate α is not too large) to the global minimum. Indeed, J is a convex quadratic function. Here is an example of gradient descent as it is run to minimize a quadratic function.
 
-![Gradient Descent For Linear Regression Example](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20For%20Linear%20Regression%20Example.png)
+![Gradient Descent For Linear Regression Example](https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20For%20Linear%20Regression%20Example.png)
 
 The ellipses shown above are the contours of a quadratic function. Also shown is the trajectory taken by gradient descent, which was initialized at (48,30). The x’s in the figure (joined by straight lines) mark the successive values of θ that gradient descent went through as it converged to its minimum.

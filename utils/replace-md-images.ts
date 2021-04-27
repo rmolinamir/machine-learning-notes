@@ -7,6 +7,7 @@ import {
   writeFileSync,
 } from 'fs';
 import { Spinner } from 'cli-spinner';
+import urljoin from 'url-join';
 
 // Helpers
 import { MdImagesJsonCache, getFiles } from './helpers';
@@ -50,9 +51,7 @@ function transformLocalUriToGithubUri(localUri: string): string {
 
   uri = uri.replace(/\\|\\\\/g, '/');
 
-  uri = `${BASE_GITHUB_PATH}/${uri}`
-
-  uri = uri.replace(/\/\//g, '/');
+  uri = urljoin(BASE_GITHUB_PATH, uri);
 
   uri = encodeURI(uri);
 
