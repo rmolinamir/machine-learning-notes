@@ -1,159 +1,159 @@
 {
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\1-cost-function": {
     "Cost Function": {
-      "src": "https://miro.medium.com/max/315/1*E-iWjE3o9luiVapwzYkR7w.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\1-cost-function\\images\\Cost-Function.png"
     },
     "Cost Function Intuition 1.1": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_B8TJZtREea33w76dwnDIg_3e3d4433e32478f8df446d0b6da26c27_Screenshot-2016-10-26-00.57.56.png?expiry=1619568000000&hmac=8qdEIHuqBUI74b38IU8vUJkkrBQn7ivzxY_bKd06YxA",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%201.1.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\1-cost-function\\images\\Cost-Function Intuition 1.1.png"
     },
     "Cost Function Intuition 1.2": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/8guexptSEeanbxIMvDC87g_3d86874dfd37b8e3c53c9f6cfa94676c_Screenshot-2016-10-26-01.03.07.png?expiry=1619568000000&hmac=2us-6CUvMrOqyRKa4FVX8tkZK8PPa6_UrPLaKmUJUEI",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%201.2.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\1-cost-function\\images\\Cost-Function Intuition 1.2.png"
     },
     "Cost Function Intuition 1.3": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/fph0S5tTEeajtg5TyD0vYA_9b28bdfeb34b2d4914d0b64903735cf1_Screenshot-2016-10-26-01.09.05.png?expiry=1619568000000&hmac=YUWKOH_tp4X570TjtddEoI6LY90WVLQWZLguI57YkjM",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%201.3.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\1-cost-function\\images\\Cost-Function Intuition 1.3.png"
     },
     "Contour Plot": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/N2oKYp2wEeaVChLw2Vaaug_d4d1c5b1c90578b32a6672e3b7e4b3a4_Screenshot-2016-10-29-01.14.37.png?expiry=1619568000000&hmac=N2HyDV7ZcH5j8j2YdIQ8_3V5R5c0VL62Pis18tNgsYs",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Contour-Plot.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\1-cost-function\\images\\Contour-Plot.png"
     },
     "Cost Function Intuition 2.1": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/26RZhJ34EeaiZBL80Yza_A_0f38a99c8ceb8aa5b90a5f12136fdf43_Screenshot-2016-10-29-01.14.57.png?expiry=1619568000000&hmac=clFyuOJ0SfLqSde9mZvIgILAnGF8LXe4jKWLHrUNKGQ",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%202.1.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\1-cost-function\\images\\Cost-Function Intuition 2.1.png"
     },
     "Cost Function Intuition 2.2": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/hsGgT536Eeai9RKvXdDYag_2a61803b5f4f86d4290b6e878befc44f_Screenshot-2016-10-29-09.59.41.png?expiry=1619568000000&hmac=7DLuWk5XbFJWBuBuL0q_O6dkQ-QIiKShStt5qeBV89c",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%202.2.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\1-cost-function\\images\\Cost-Function Intuition 2.2.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\2-gradient-descent": {
     "Cost Function of Linear Regression": {
-      "src": "https://miro.medium.com/max/358/1*vYspf1L6Omqh91nEdHsgEw.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Cost-Function%20of%20Linear%20Regression.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\2-gradient-descent\\images\\Cost-Function of Linear Regression.png"
     },
     "Gradient Descent Graph": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bn9SyaDIEeav5QpTGIv-Pg_0d06dca3d225f3de8b5a4a7e92254153_Screenshot-2016-11-01-23.48.26.png?expiry=1619568000000&hmac=lWAmLRw4N5CRAbAbVnTpNXtO07x4kbUq273kZoOCD5M",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Graph.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\2-gradient-descent\\images\\Gradient-Descent Graph.png"
     },
     "Gradient Descent Algorithm Iteration": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/yr-D1aDMEeai9RKvXdDYag_627e5ab52d5ff941c0fcc741c2b162a0_Screenshot-2016-11-02-00.19.56.png?expiry=1619568000000&hmac=nePqSKgwBRyOCjZQ0SIRT1j1MxaOvQw4IzT-JJMaODM",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Algorithm%20Iteration.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\2-gradient-descent\\images\\Gradient-Descent Algorithm Iteration.png"
     },
     "Gradient Descent Intuition 1.1": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/SMSIxKGUEeav5QpTGIv-Pg_ad3404010579ac16068105cfdc8e950a_Screenshot-2016-11-03-00.05.06.png?expiry=1619568000000&hmac=fx_J8R9EFonCQe2vHFIPCvYVDxCK_khszNyllnv3IFU",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Intuition%201.1.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\2-gradient-descent\\images\\Gradient-Descent Intuition 1.1.png"
     },
     "Gradient Descent Intuition 1.2": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/UJpiD6GWEeai9RKvXdDYag_3c3ad6625a2a4ec8456f421a2f4daf2e_Screenshot-2016-11-03-00.05.27.png?expiry=1619568000000&hmac=33d4AXD5Pd8rZ9-rmM5NmwTS6VOm5obOKZggvRS8PFM",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Intuition%201.2.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\2-gradient-descent\\images\\Gradient-Descent Intuition 1.2.png"
     },
     "Gradient Descent Intuition 1.3": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/RDcJ-KGXEeaVChLw2Vaaug_cb782d34d272321e88f202940c36afe9_Screenshot-2016-11-03-00.06.00.png?expiry=1619568000000&hmac=cG7tAMoOTFIvcCjrOv0nBu5d-yAIsTuajDoEnuy_xUA",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20Intuition%201.3.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\2-gradient-descent\\images\\Gradient-Descent Intuition 1.3.png"
     },
     "Gradient Descent For Linear Regression Example": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/xAQBlqaaEeawbAp5ByfpEg_24e9420f16fdd758ccb7097788f879e7_Screenshot-2016-11-09-08.36.49.png?expiry=1619568000000&hmac=Iwqpo2hzGEviaYDb5Vsi6aQ_yAwU53iB8gwRIK0cTLk",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/2-gradient-descent/images/Gradient-Descent%20For%20Linear%20Regression%20Example.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\2-gradient-descent\\images\\Gradient-Descent For Linear Regression Example.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables": {
     "Linear Regression with Multiple Variables Equation Comparison": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/MYm8uqafEeaZoQ7hPZtKqg_c974c2e2953662e9578b38c7b04591ed_Screenshot-2016-11-09-09.07.04.png?expiry=1619568000000&hmac=lIVVHvdxeZxhtJMLM8CTVlqe-iJaAAABPV2_fykKmSc",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Linear-Regression%20with%20Multiple%20Variables%20Equation%20Comparison.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Linear-Regression with Multiple Variables Equation Comparison.png"
     },
     "Feature Scaling Range 1": {
-      "src": "https://latex.codecogs.com/gif.latex?-1%20%5Cleq%20x_%7B%28i%29%7D%5Cleq%201",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Range%201.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Feature-Scaling Range 1.png"
     },
     "Feature Scaling Range 2": {
-      "src": "https://latex.codecogs.com/gif.latex?-0.5%20%5Cleq%20x_%7B%28i%29%7D%20%5Cleq%200.5",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Range%202.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Feature-Scaling Range 2.png"
     },
     "Feature Scaling Equation": {
-      "src": "https://latex.codecogs.com/gif.latex?x_%7Bi%7D%20%3A%3D%20%5Cfrac%7Bx_%7Bi%7D%20-%20%5Cmu_%7Bi%7D%7D%7Bs_%7Bi%7D%7D",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Equation.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Feature-Scaling Equation.png"
     },
     "Feature Scaling Equation Example": {
-      "src": "https://latex.codecogs.com/gif.latex?x_%7Bi%7D%20%3A%3D%20%5Cfrac%7Bprice%20-%201000%7D%7B1900%7D",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Feature-Scaling%20Equation%20Example.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Feature-Scaling Equation Example.png"
     },
     "Features and Polynomial Regression Square Root Function": {
-      "src": "https://latex.codecogs.com/gif.latex?h_%7B%5CTheta%20%7D%5Cleft%20%28%20x%20%5Cright%20%29%20%3D%20%5CTheta_%7B0%7D%20+%20%5CTheta_%7B1%7Dx_%7B1%7D%20+%20%5CTheta_%7B2%7D%5Csqrt%7Bx_%7B1%7D%7D",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Features-and%20Polynomial%20Regression%20Square%20Root%20Function.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Features-and Polynomial Regression Square Root Function.png"
     },
     "Hypothesis for Linear Regression": {
-      "src": "https://miro.medium.com/max/377/1*k-sttEqbKIOSlAas3C36CA.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Hypothesis-for%20Linear%20Regression.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Hypothesis-for Linear Regression.png"
     },
     "Hypothesis Implementation: Vectorization 1.1": {
-      "src": "https://miro.medium.com/max/539/1*K6bwmo5ZA00aQau-_S4ryg.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Hypothesis-Implementation%20Vectorization%201.1.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Hypothesis-Implementation Vectorization 1.1.png"
     },
     "Hypothesis Implementation: Vectorization 1.2": {
-      "src": "https://miro.medium.com/max/512/1*U4W4RljYFmJQVsLi4YVozw.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Hypothesis-Implementation%20Vectorization%201.2.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Hypothesis-Implementation Vectorization 1.2.png"
     },
     "Cost function Implementation: Vectorization": {
-      "src": "https://miro.medium.com/max/336/1*rZjirMxeNnyJvziPsOv6Xw.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Cost-function%20Implementation%20Vectorization.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Cost-function Implementation Vectorization.png"
     },
     "Cost function Implementation: Vectorization 1.1": {
-      "src": "https://miro.medium.com/max/336/1*rZjirMxeNnyJvziPsOv6Xw.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Cost-function%20Implementation%20Vectorization%201.1.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Cost-function Implementation Vectorization 1.1.png"
     },
     "Cost function Implementation: Vectorization 1.2": {
-      "src": "https://miro.medium.com/max/283/1*TYSV4TecQ9DgSZ_sAQD1mw.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/3-linear-regression-with-multiple-variables/images/Cost-function%20Implementation%20Vectorization%201.2.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\3-linear-regression-with-multiple-variables\\images\\Cost-function Implementation Vectorization 1.2.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\4-classification": {
     "Sigmoid Function": {
-      "src": "https://qph.fs.quoracdn.net/main-qimg-6b67bea3311c3429bfb34b6b1737fe0c",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Sigmoid-Function.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\4-classification\\images\\Sigmoid-Function.png"
     },
     "Cost Function Vectorized Implementation": {
-      "src": "https://latex.codecogs.com/gif.latex?%5CTheta%20%3A%3D%5CTheta%20-%5Cfrac%7B%5Calpha%20%7D%7Bm%7DX%5E%7BT%7D%28g%28X%5CTheta%20%29-%5Cvec%7By%7D%29",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Cost-Function%20Vectorized%20Implementation.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\4-classification\\images\\Cost-Function Vectorized Implementation.png"
     },
     "Regularized Linear Regression Gradient Descent Equation": {
-      "src": "https://i.imgur.com/5PKjv22.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-Linear%20Regression%20Gradient%20Descent%20Equation.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\4-classification\\images\\Regularized-Linear Regression Gradient Descent Equation.png"
     },
     "Regularized Linear Regression Gradient Descent Equation 2": {
-      "src": "https://imgur.com/5EAqZO5.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-Linear%20Regression%20Gradient%20Descent%20Equation%202.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\4-classification\\images\\Regularized-Linear Regression Gradient Descent Equation 2.png"
     },
     "Regularized Linear Regression Normal Equation": {
-      "src": "https://imgur.com/TAnyAn2.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-Linear%20Regression%20Normal%20Equation.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\4-classification\\images\\Regularized-Linear Regression Normal Equation.png"
     },
     "Regularized logistic Regression Normal Equation": {
-      "src": "https://imgur.com/wAtynOX.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-logistic%20Regression%20Normal%20Equation.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\4-classification\\images\\Regularized-logistic Regression Normal Equation.png"
     },
     "Regularized logistic Regression Normal Equation 2": {
-      "src": "https://imgur.com/JBSKRKw.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-logistic%20Regression%20Normal%20Equation%202.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\4-classification\\images\\Regularized-logistic Regression Normal Equation 2.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks": {
     "Neural Networks Model Representation Simplistic Representation": {
-      "src": "https://i.imgur.com/YvrP11j.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Neural-Networks%20Model%20Representation%20Simplistic%20Representation.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Neural-Networks Model Representation Simplistic Representation.png"
     },
     "Matrix of Weights Explanation": {
-      "src": "https://i.imgur.com/Np83NLF.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Matrix-of%20Weights%20Explanation.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Matrix-of Weights Explanation.png"
     },
     "Neural Networks Model Representation 1": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/0rgjYLDeEeajLxLfjQiSjg_0c07c56839f8d6e8d7b0d09acedc88fd_Screenshot-2016-11-22-10.08.51.png?expiry=1619568000000&hmac=eGToZqvXkvcM9izLda9-r49PRX38cZU2RJIZ_ghffCo",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Neural-Networks%20Model%20Representation%201.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Neural-Networks Model Representation 1.png"
     },
     "Neural Networks Cost Function": {
-      "src": "https://i.imgur.com/9G6EwQJ.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Neural-Networks%20Cost%20Function.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Neural-Networks Cost Function.png"
     },
     "Backpropagation partial derivative of J(Θ)": {
@@ -161,225 +161,225 @@
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Backpropagation-partial derivative of J(Θ).png"
     },
     "Forward propagation": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bYLgwteoEeaX9Qr89uJd1A_73f280ff78695f84ae512f19acfa29a3_Screenshot-2017-01-10-18.16.50.png?expiry=1619568000000&hmac=gQqZyrnYxv0chkkZuyQ3UdBVS8DCBl38p3BA8fSUJn0",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Forward-propagation.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Forward-propagation.png"
     },
     "g-prime derivative terms": {
-      "src": "https://i.imgur.com/HwBuykQ.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/g-prime-derivative%20terms.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\g-prime-derivative terms.png"
     },
     "Delta Matrix 1": {
-      "src": "https://i.imgur.com/KM9YoN9.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Delta-Matrix%201.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Delta-Matrix 1.png"
     },
     "Delta Matrix 2": {
-      "src": "https://i.imgur.com/zdmRUE3.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Delta-Matrix%202.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Delta-Matrix 2.png"
     },
     "Delta Matrix 3": {
-      "src": "https://i.imgur.com/6DlQkns.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Delta-Matrix%203.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Delta-Matrix 3.png"
     },
     "Gradient Checking 1": {
-      "src": "https://i.imgur.com/8M2iNR2.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Gradient-Checking%201.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Gradient-Checking 1.png"
     },
     "Gradient Checking 2": {
-      "src": "https://i.imgur.com/rvTqcxM.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Gradient-Checking%202.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Gradient-Checking 2.png"
     },
     "Symmety Breaking": {
-      "src": "https://i.imgur.com/Gq2BgYn.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Symmety-Breaking.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Symmety-Breaking.png"
     },
     "Neural Network Gradient Descent Intuition": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/hGk18LsaEea7TQ6MHcgMPA_8de173808f362583eb39cdd0c89ef43e_Screen-Shot-2016-12-05-at-10.40.35-AM.png?expiry=1619568000000&hmac=hPPpL5XyaP5WkbIwITWpEYoYtWVFAiY4QEUBf1xVehY",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Neural-Network%20Gradient%20Descent%20Intuition.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\5-neural-networks\\images\\Neural-Network Gradient Descent Intuition.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\6-diagnostics": {
     "The test set error": {
-      "src": "https://i.imgur.com/qBLc8s1.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/The-test%20set%20error.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\6-diagnostics\\images\\The-test set error.png"
     },
     "Test Error": {
-      "src": "https://i.imgur.com/UD9NxXd.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Test-Error.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\6-diagnostics\\images\\Test-Error.png"
     },
     "Diagnosing Bias vs. Variance": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/I4dRkz_pEeeHpAqQsW8qwg_bed7efdd48c13e8f75624c817fb39684_fixed.png?expiry=1619568000000&hmac=yHA_uY3oeGDeyEt_IfBM-RGYEjondM1JxDKhmr9lOaw",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Diagnosing-Bias%20vs.%20Variance.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\6-diagnostics\\images\\Diagnosing-Bias vs. Variance.png"
     },
     "Regularization and Bias/Variance": {
-      "src": "https://i.imgur.com/TKIIMuz.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Regularization-and%20BiasVariance.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\6-diagnostics\\images\\Regularization-and BiasVariance.png"
     },
     "Typical Learning Curve for High Bias": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bpAOvt9uEeaQlg5FcsXQDA_ecad653e01ee824b231ff8b5df7208d9_2-am.png?expiry=1619568000000&hmac=XyuadkH9BurLzUcrhUryD8893YBT-smlN_3NPq5B35w",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Typical-Learning%20Curve%20for%20High%20Bias.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\6-diagnostics\\images\\Typical-Learning Curve for High Bias.png"
     },
     "Typical Learning Curve for High Variance": {
-      "src": "https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/vqlG7t9uEeaizBK307J26A_3e3e9f42b5e3ce9e3466a0416c4368ee_ITu3antfEeam4BLcQYZr8Q_37fe6be97e7b0740d1871ba99d4c2ed9_300px-Learning1.png?expiry=1619568000000&hmac=Mfr0tu_9kOrCHMCVDJiATHitUYc3CCew5Rf_LnxwMTw",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Typical-Learning%20Curve%20for%20High%20Variance.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\6-diagnostics\\images\\Typical-Learning Curve for High Variance.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\8-handling-skewed-data": {
     "Error Metrics for Skewed Classes": {
-      "src": "https://i.imgur.com/jjhWMcV.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/8-handling-skewed-data/images/Error-Metrics%20for%20Skewed%20Classes.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\8-handling-skewed-data\\images\\Error-Metrics for Skewed Classes.png"
     },
     "Trading Off Precision and Recall F1 Score": {
-      "src": "https://i.imgur.com/iJAHbo4.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/8-handling-skewed-data/images/Trading-Off%20Precision%20and%20Recall%20F1%20Score.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\8-handling-skewed-data\\images\\Trading-Off Precision and Recall F1 Score.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines": {
     "SVM ": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B11%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\SVM-.png"
     },
     "SVM Cost Terms": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B12%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Terms.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\SVM-Cost Terms.png"
     },
     "SVM Decision Boundaries": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B14%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Decision%20Boundaries.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\SVM-Decision Boundaries.png"
     },
     "Mathematics Behind Large Margin Classification Example I": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B32%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Mathematics-Behind%20Large%20Margin%20Classification%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\Mathematics-Behind Large Margin Classification Example I.png"
     },
     "Mathematics Behind Large Margin Classification Example II": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B36%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Mathematics-Behind%20Large%20Margin%20Classification%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\Mathematics-Behind Large Margin Classification Example II.png"
     },
     "Mathematics Behind Large Margin Classification Example III": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B39%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Mathematics-Behind%20Large%20Margin%20Classification%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\Mathematics-Behind Large Margin Classification Example III.png"
     },
     "Kernels I Example I": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B40%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\Kernels-I Example I.png"
     },
     "Kernels I Example II": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B41%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\Kernels-I Example II.png"
     },
     "Kernels I Example III": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B42%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\Kernels-I Example III.png"
     },
     "Kernels I Example IV": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B45%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\Kernels-I Example IV.png"
     },
     "Kernels I Example V": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B47%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\Kernels-I Example V.png"
     },
     "Kernels I Example VI": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B50%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/Kernels-I%20Example%20VI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\Kernels-I Example VI.png"
     },
     "SVM Cost Function": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B51%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Function.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\SVM-Cost Function.png"
     },
     "SVM Cost Function Theta Term": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B52%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Function%20Theta%20Term.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\SVM-Cost Function Theta Term.png"
     },
     "SVM Cost Function Theta Vectorization": {
-      "src": "https://www.holehouse.org/mlclass/12_Support_Vector_Machines_files/Image%20%5B52%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/9-support-vector-machines/images/SVM-Cost%20Function%20Theta%20Vectorization.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\1-supervised-learning\\9-support-vector-machines\\images\\SVM-Cost Function Theta Vectorization.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering": {
     "Clustering Example": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B2%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/Clustering-Example.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\Clustering-Example.png"
     },
     "K-Means Algorithm Example I": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Example I.png"
     },
     "K-Means Algorithm Example II": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B1%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Example II.png"
     },
     "K-Means Algorithm Example III": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B2%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Example III.png"
     },
     "K-Means Algorithm Example IV": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B3%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Example IV.png"
     },
     "K-Means Algorithm Example V": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B4%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Example V.png"
     },
     "K-Means Algorithm Non-Separated Clusters Example I": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B5%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Non-Separated%20Clusters%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Non-Separated Clusters Example I.png"
     },
     "K-Means Algorithm Non-Separated Clusters Example II": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B6%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Non-Separated%20Clusters%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Non-Separated Clusters Example II.png"
     },
     "K-Means Algorithm Optimization Objective Example I": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B7%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Optimization%20Objective%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Optimization Objective Example I.png"
     },
     "K-Means Algorithm Optimization Objective Example II": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B8%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Optimization%20Objective%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Optimization Objective Example II.png"
     },
     "K-Means Algorithm Optimization Objective Example III": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B9%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Optimization%20Objective%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\K-Means-Algorithm Optimization Objective Example III.png"
     },
     "Random Initialization Example I": {
-      "src": "https://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B10%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/Random-Initialization%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\Random-Initialization Example I.png"
     },
     "Elbow Method Example I": {
-      "src": "http://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B12%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/Elbow-Method%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\Elbow-Method Example I.png"
     },
     "Downstream Purpose Method Example I": {
-      "src": "http://www.holehouse.org/mlclass/13_Clustering_files/Image%20%5B13%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/Downstream-Purpose%20Method%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\1-clustering\\images\\Downstream-Purpose Method Example I.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction": {
     "Data Compression Example I": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Data-Compression Example I.png"
     },
     "Data Compression Example II": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B1%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Data-Compression Example II.png"
     },
     "Data Compression Example III": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B2%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Data-Compression Example III.png"
     },
     "Data Compression Example IV": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B4%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Data-Compression%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Data-Compression Example IV.png"
     },
     "Visualization Example I": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B5%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Visualization-Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Visualization-Example I.png"
     },
     "Visualization Example II": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B6%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Visualization-Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Visualization-Example II.png"
     },
     "Visualization Example III": {
-      "src": "https://i.imgur.com/1NgE4sN.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Visualization-Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Visualization-Example III.png"
     },
     "Principle Component Analysis (PCA) Problem Formulation Example I": {
@@ -415,41 +415,41 @@
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Principle-Component Analysis (PCA) Algorithm Covariance Matrix III.png"
     },
     "Reconstruction from Compressed Representation Example I": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B15%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Reconstruction-from%20Compressed%20Representation%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Reconstruction-from Compressed Representation Example I.png"
     },
     "Choosing the number of Principle Components Example I": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B17%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Choosing-the number of Principle Components Example I.png"
     },
     "Choosing the number of Principle Components Example II": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B18%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Choosing-the number of Principle Components Example II.png"
     },
     "Choosing the number of Principle Components Example III": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B19%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Choosing-the number of Principle Components Example III.png"
     },
     "Choosing the number of Principle Components Example IV": {
-      "src": "https://www.holehouse.org/mlclass/14_Dimensionality_Reduction_files/Image%20%5B20%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/2-dimensionality-reduction/images/Choosing-the%20number%20of%20Principle%20Components%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\2-dimensionality-reduction\\images\\Choosing-the number of Principle Components Example IV.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection": {
     "Problem Motivation Example I": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Problem-Motivation Example I.png"
     },
     "Problem Motivation Example II": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B1%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Problem-Motivation Example II.png"
     },
     "Problem Motivation Example III": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B2%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Problem-Motivation Example III.png"
     },
     "Problem Motivation Example IV": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B3%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Problem-Motivation%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Problem-Motivation Example IV.png"
     },
     "The Gaussian Distribution (Normal Distribution) Example I": {
@@ -477,443 +477,443 @@
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\The-Gaussian Distribution (Normal Distribution) Mean and Variance Equation.png"
     },
     "Algorithm Model": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B10%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Model.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Algorithm-Model.png"
     },
     "Algorithm Implementation": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B11%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Implementation.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Algorithm-Implementation.png"
     },
     "Algorithm Example II": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B12%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Algorithm-Example II.png"
     },
     "Algorithm Example III": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B13%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Algorithm-Example III.png"
     },
     "Algorithm Example IV": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B14%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Algorithm-Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Algorithm-Example IV.png"
     },
     "Choosing What Features to Use Example I": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B15%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Choosing-What%20Features%20to%20Use%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Choosing-What Features to Use Example I.png"
     },
     "Choosing What Features to Use Example II": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B16%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Choosing-What%20Features%20to%20Use%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Choosing-What Features to Use Example II.png"
     },
     "Choosing What Features to Use Example III": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B17%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Choosing-What%20Features%20to%20Use%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Choosing-What Features to Use Example III.png"
     },
     "Multivariate Gaussian Distribution Example I": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B18%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example I.png"
     },
     "Multivariate Gaussian Distribution Example II": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B19%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example II.png"
     },
     "Multivariate Gaussian Distribution Example III": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B20%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example III.png"
     },
     "Multivariate Gaussian Distribution Example IV": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B21%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example IV.png"
     },
     "Multivariate Gaussian Distribution Example VI": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B23%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20VI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example VI.png"
     },
     "Multivariate Gaussian Distribution Example VII": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B24%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20VII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example VII.png"
     },
     "Multivariate Gaussian Distribution Example VIII": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B25%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20VIII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example VIII.png"
     },
     "Multivariate Gaussian Distribution Example IX": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B26%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20IX.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example IX.png"
     },
     "Multivariate Gaussian Distribution Example X": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B27%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20X.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example X.png"
     },
     "Multivariate Gaussian Distribution Example XI": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B28%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Multivariate-Gaussian%20Distribution%20Example%20XI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Multivariate-Gaussian Distribution Example XI.png"
     },
     "Anomaly Detection using the Multivariate Gaussian Distribution Example I": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B29%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Anomaly-Detection using the Multivariate Gaussian Distribution Example I.png"
     },
     "Anomaly Detection using the Multivariate Gaussian Distribution Example II": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B30%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Anomaly-Detection using the Multivariate Gaussian Distribution Example II.png"
     },
     "Anomaly Detection using the Multivariate Gaussian Distribution Example III": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B31%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Anomaly-Detection using the Multivariate Gaussian Distribution Example III.png"
     },
     "Anomaly Detection using the Multivariate Gaussian Distribution Example IV": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B33%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Anomaly-Detection using the Multivariate Gaussian Distribution Example IV.png"
     },
     "Anomaly Detection using the Multivariate Gaussian Distribution Example V": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B32%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Anomaly-Detection using the Multivariate Gaussian Distribution Example V.png"
     },
     "Anomaly Detection using the Multivariate Gaussian Distribution Example VI": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B34%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20VI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Anomaly-Detection using the Multivariate Gaussian Distribution Example VI.png"
     },
     "Anomaly Detection using the Multivariate Gaussian Distribution Example VII": {
-      "src": "https://www.holehouse.org/mlclass/15_Anomaly_Detection_files/Image%20%5B35%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/3-anomaly-detection/images/Anomaly-Detection%20using%20the%20Multivariate%20Gaussian%20Distribution%20Example%20VII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\2-unsupervised-learning\\3-anomaly-detection\\images\\Anomaly-Detection using the Multivariate Gaussian Distribution Example VII.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems": {
     "Problem Formulation Example I": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Problem-Formulation%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Problem-Formulation Example I.png"
     },
     "Content Based Recommendations Example I": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B1%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Content-Based Recommendations Example I.png"
     },
     "Content Based Recommendations Example II": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B3%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Content-Based Recommendations Example II.png"
     },
     "Content Based Recommendations Example III": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B4%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Content-Based Recommendations Example III.png"
     },
     "Content Based Recommendations Example IV": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B5%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Content-Based Recommendations Example IV.png"
     },
     "Content Based Recommendations Example V": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B6%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Content-Based Recommendations Example V.png"
     },
     "Content Based Recommendations Example VI": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B7%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20VI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Content-Based Recommendations Example VI.png"
     },
     "Content Based Recommendations Example VII": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B8%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20VII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Content-Based Recommendations Example VII.png"
     },
     "Content Based Recommendations Example VIII": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B9%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20VIII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Content-Based Recommendations Example VIII.png"
     },
     "Content Based Recommendations Example IX": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B10%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20IX.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Content-Based Recommendations Example IX.png"
     },
     "Collaborative Filtering Example I": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B11%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Collaborative-Filtering Example I.png"
     },
     "Collaborative Filtering Example II": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B12%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Collaborative-Filtering Example II.png"
     },
     "Collaborative Filtering Example III": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B13%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Collaborative-Filtering Example III.png"
     },
     "Formalizing the collaborative filtering problem Example I": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B14%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Formalizing-the%20collaborative%20filtering%20problem%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Formalizing-the collaborative filtering problem Example I.png"
     },
     "Collaborative Filtering Algorithm Example I": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B15%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Algorithm%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Collaborative-Filtering Algorithm Example I.png"
     },
     "Collaborative Filtering Algorithm Example II": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B16%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Algorithm%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Collaborative-Filtering Algorithm Example II.png"
     },
     "Collaborative Filtering Algorithm Example III": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B17%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Algorithm%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Collaborative-Filtering Algorithm Example III.png"
     },
     "Collaborative Filtering Algorithm Example IV": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B18%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Algorithm%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Collaborative-Filtering Algorithm Example IV.png"
     },
     "Feature Gradient": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B19%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Feature-Gradient.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Feature-Gradient.png"
     },
     "Parameter Gradient": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B20%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Parameter-Gradient.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Parameter-Gradient.png"
     },
     "Vectorization: Low Rank Matrix Factorization Example I": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B21%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Vectorization-Low%20Rank%20Matrix%20Factorization%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Vectorization-Low Rank Matrix Factorization Example I.png"
     },
     "Low Rank Matrix Factorization Matrix Y": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B22%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Low-Rank%20Matrix%20Factorization%20Matrix%20Y.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Low-Rank Matrix Factorization Matrix Y.png"
     },
     "Low Rank Matrix Factorization Matrix X": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B23%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Low-Rank%20Matrix%20Factorization%20Matrix%20X.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Low-Rank Matrix Factorization Matrix X.png"
     },
     "Low Rank Matrix Factorization Matrix Θ": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B24%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Low-Rank%20Matrix%20Factorization%20Matrix%20%CE%98.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Low-Rank Matrix Factorization Matrix Θ.png"
     },
     "Implementational Detail: Mean Normalization Example I": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B25%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Implementational-Detail Mean Normalization Example I.png"
     },
     "Implementational Detail: Mean Normalization Example II": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B26%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Implementational-Detail Mean Normalization Example II.png"
     },
     "Implementational Detail: Mean Normalization Example III": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B27%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Implementational-Detail Mean Normalization Example III.png"
     },
     "Implementational Detail: Mean Normalization Example IV": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B28%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Implementational-Detail Mean Normalization Example IV.png"
     },
     "Implementational Detail: Mean Normalization Example V": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B29%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Implementational-Detail Mean Normalization Example V.png"
     },
     "Implementational Detail: Mean Normalization Example VI": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B30%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20VI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Implementational-Detail Mean Normalization Example VI.png"
     },
     "Implementational Detail: Mean Normalization Example VII": {
-      "src": "https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20%5B31%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20VII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\1-recommender-systems\\images\\Implementational-Detail Mean Normalization Example VII.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning": {
     "Learning With Large Datasets Example I": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Learning-With Large Datasets Example I.png"
     },
     "Learning With Large Datasets Example II": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B1%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Learning-With Large Datasets Example II.png"
     },
     "Learning With Large Datasets Example III": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B3%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Learning-With Large Datasets Example III.png"
     },
     "Learning With Large Datasets Example IV": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B2%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Learning-With Large Datasets Example IV.png"
     },
     "Learning With Large Datasets V": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B4%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Learning-With Large Datasets V.png"
     },
     "Learning With Large Datasets VI": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B5%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20VI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Learning-With Large Datasets VI.png"
     },
     "Learning With Large Datasets VII": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B6%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20VII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Learning-With Large Datasets VII.png"
     },
     "Learning With Large Datasets VIII": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B7%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20VIII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Learning-With Large Datasets VIII.png"
     },
     "Learning With Large Datasets IX": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B8%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Learning-With%20Large%20Datasets%20IX.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Learning-With Large Datasets IX.png"
     },
     "Stochastic Gradient Descent Example I": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B9%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Example I.png"
     },
     "Stochastic Gradient Descent Example II": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B10%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Example II.png"
     },
     "Stochastic Gradient Descent Example III": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B11%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Example III.png"
     },
     "Stochastic Gradient Descent Example IV": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B12%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Example IV.png"
     },
     "Stochastic Gradient Descent Example V": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B13%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Example V.png"
     },
     "Stochastic Gradient Descent Example VI": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B14%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20VI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Example VI.png"
     },
     "Stochastic Gradient Descent Example VII": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B15%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20VII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Example VII.png"
     },
     "Stochastic Gradient Descent Example VIII": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B16%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Example%20VIII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Example VIII.png"
     },
     "Mini-Batch Gradient Descent Algorithm Example I": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B17%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Mini-Batch-Gradient%20Descent%20Algorithm%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Mini-Batch-Gradient Descent Algorithm Example I.png"
     },
     "Stochastic Gradient Descent Convergence Example I": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B18%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Convergence Example I.png"
     },
     "Stochastic Gradient Descent Convergence Example II": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B20%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Convergence Example II.png"
     },
     "Stochastic Gradient Descent Convergence Example III": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B20%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Convergence Example III.png"
     },
     "Stochastic Gradient Descent Convergence Example IV": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B21%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Convergence Example IV.png"
     },
     "Stochastic Gradient Descent Convergence Example V": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B23%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Convergence Example V.png"
     },
     "Stochastic Gradient Descent Convergence Example VI": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B16%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20VI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Convergence Example VI.png"
     },
     "Stochastic Gradient Descent Convergence Example VII": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B24%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/2-large-scale-machine-learning/images/Stochastic-Gradient%20Descent%20Convergence%20Example%20VII.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\2-large-scale-machine-learning\\images\\Stochastic-Gradient Descent Convergence Example VII.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\3-online-learning": {
     "Shipping Service Example I": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B25%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/3-online-learning/images/Shipping-Service%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\3-online-learning\\images\\Shipping-Service Example I.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\4-map-reduce-and-data-parallelism": {
     "Map Reduce Example I": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B27%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\4-map-reduce-and-data-parallelism\\images\\Map-Reduce Example I.png"
     },
     "Map Reduce Example II": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B28%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\4-map-reduce-and-data-parallelism\\images\\Map-Reduce Example II.png"
     },
     "Map Reduce Example III": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B29%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\4-map-reduce-and-data-parallelism\\images\\Map-Reduce Example III.png"
     },
     "Map Reduce Example IV": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B30%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\4-map-reduce-and-data-parallelism\\images\\Map-Reduce Example IV.png"
     },
     "Map Reduce Example V": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B31%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\4-map-reduce-and-data-parallelism\\images\\Map-Reduce Example V.png"
     },
     "Map Reduce Example VI": {
-      "src": "https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20%5B32%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/4-map-reduce-and-data-parallelism/images/Map-Reduce%20Example%20VI.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\4-map-reduce-and-data-parallelism\\images\\Map-Reduce Example VI.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr": {
     "Problem Description and Pipeline": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Problem-Description%20and%20Pipeline.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Problem-Description and Pipeline.png"
     },
     "Sliding Windows Example I": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B1%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Sliding-Windows Example I.png"
     },
     "Sliding Windows Example II": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B2%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Sliding-Windows Example II.png"
     },
     "Sliding Windows Example III": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B3%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Sliding-Windows Example III.png"
     },
     "Sliding Windows Example IV": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B4%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Sliding-Windows Example IV.png"
     },
     "Sliding Windows Example V": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B5%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20V.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Sliding-Windows Example V.png"
     },
     "Text Detection Example I": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B6%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Text-Detection%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Text-Detection Example I.png"
     },
     "Text Detection Example II": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B7%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Text-Detection%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Text-Detection Example II.png"
     },
     "Text Detection Example III": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B8%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Text-Detection%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Text-Detection Example III.png"
     },
     "Text Detection Example IV": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B9%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Text-Detection%20Example%20IV.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Text-Detection Example IV.png"
     },
     "Character Segmentation Example I": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B10%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Character-Segmentation%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Character-Segmentation Example I.png"
     },
     "Character Segmentation Example II": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B11%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Character-Segmentation%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Character-Segmentation Example II.png"
     },
     "Getting Lots of Data and Artificial Data Example I": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B12%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Getting-Lots%20of%20Data%20and%20Artificial%20Data%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Getting-Lots of Data and Artificial Data Example I.png"
     },
     "Getting Lots of Data and Artificial Data Example II": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B13%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Getting-Lots%20of%20Data%20and%20Artificial%20Data%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Getting-Lots of Data and Artificial Data Example II.png"
     },
     "Getting Lots of Data and Artificial Data Example III": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B14%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Getting-Lots%20of%20Data%20and%20Artificial%20Data%20Example%20III.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Getting-Lots of Data and Artificial Data Example III.png"
     },
     "Ceiling Analysis: What Part of the Pipeline to Work on Next Example I": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B15%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Ceiling-Analysis%20What%20Part%20of%20the%20Pipeline%20to%20Work%20on%20Next%20Example%20I.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Ceiling-Analysis What Part of the Pipeline to Work on Next Example I.png"
     },
     "Ceiling Analysis: What Part of the Pipeline to Work on Next Example II": {
-      "src": "https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20%5B16%5D.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Ceiling-Analysis%20What%20Part%20of%20the%20Pipeline%20to%20Work%20on%20Next%20Example%20II.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\docs\\3-machine-learning-systems\\5-application-example-photo-ocr\\images\\Ceiling-Analysis What Part of the Pipeline to Work on Next Example II.png"
     }
   },
   "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes": {
     "Linear Regression Cheat Sheet": {
-      "src": "https://miro.medium.com/max/1000/1*PZ3TTZZIT1wlqyt05TpZBg.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/images/Linear-Regression%20Cheat%20Sheet.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\images\\Linear-Regression Cheat Sheet.png"
     },
     "Logistic Regression Cheat Sheet": {
-      "src": "https://miro.medium.com/max/1000/1*YNmikbD5k_reqBF1QytErQ.png",
+      "src": "https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/images/Logistic-Regression%20Cheat%20Sheet.png",
       "local": "C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\images\\Logistic-Regression Cheat Sheet.png"
     }
   }

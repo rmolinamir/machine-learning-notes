@@ -92,9 +92,12 @@ async function downloadImages(images: Image[], saveDirectory: string) {
       .replace(/[/\\?%*:|"<>]/g, '')
       .replace(' ', '-');
 
+    const cachedImage = mdImagesJsonCache.get(saveDirectory, alt);
+
     try {
-      // Fetch the image ONLY if it hasn't been cached.
-      if (!mdImagesJsonCache.exists(saveDirectory, alt)) {
+      // Fetch the image ONLY if it hasn't been cached, or if the cached source
+      // has changed.
+      if (!cachedImage || cachedImage.src !== src) {
         const result = await axios({ url: src, responseType: 'stream' });
 
         // Downloading the images, then saving them.
