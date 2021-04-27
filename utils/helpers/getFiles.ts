@@ -6,7 +6,7 @@ const { readdir } = promises;
 
 const DIR_BLACKLIST = [
   'node_modules',
-  'ml-coursera-python-assignments',
+  'jupyter-notebooks',
   '.git',
 ];
 
