@@ -41,7 +41,7 @@ If you have a website that continuously runs an online learning algorithm, the w
   - x is the feature vector including price we offer, origin, destination, etc.
   - y indicates if they chose to use our service or not.
 - The algorithm updates θ using just the (x,y) pair (stochastic gradient descent).
-  ![Shipping Service Example I](https://www.holehouse.org/mlclass/17_Large_Scale_Machine_Learning_files/Image%20[25].png)
+  ![Shipping Service Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/3-online-learning/images/Shipping-Service%20Example%20I.png)
 - We basically update all the θ parameters every time we get some new data.
 
 While in previous examples we might have described the data example as (x<sup>i</sup>, y<sup>i</sup>), for an online learning problem we discard this idea of a data set, and instead we have a continuous stream of data so indexing is largely irrelevant as you're not storing the data (although presumably you could store it).

@@ -7,7 +7,7 @@ import {
 interface Cache<T> {
   cache: Record<string, T>;
 
-  get(...args: unknown[]): string;
+  get(...args: unknown[]): unknown;
 
   exists(...args: unknown[]): boolean;
 
@@ -16,10 +16,10 @@ interface Cache<T> {
   write(...args: unknown[]): void;
 }
 
-export class MdImagesJsonCache implements Cache<Record<string, string>> {
+export class MdImagesJsonCache implements Cache<Record<string, { src: string; local: string; }>> {
   private cachePath: string;
 
-  public cache: Record<string, Record<string, string>> = {};
+  public cache: Record<string, Record<string, { src: string; local: string; }>> = {};
 
   constructor(args: {
     cachePath: string;
@@ -29,23 +29,23 @@ export class MdImagesJsonCache implements Cache<Record<string, string>> {
     this.cache = JSON.parse(readFileSync(
       this.cachePath,
       { encoding: 'utf-8' },
-    )) as Record<string, Record<string, string>>;
+    ));
   }
 
-  public get(saveDirectory: string, src: string): string {
-    return this.cache[saveDirectory] && this.cache[saveDirectory][src];
+  public get(saveDirectory: string, alt: string): { src: string; local: string; } {
+    return this.cache[saveDirectory] && this.cache[saveDirectory][alt];
   }
 
   public exists(saveDirectory: string, src: string): boolean {
     return Boolean(this.get(saveDirectory, src));
   }
 
-  public set(saveDirectory: string, src: string, filePath: string): void {
+  public set(saveDirectory: string, alt: string, val: { src: string; local: string; }): void {
     if (!this.cache[saveDirectory]) {
       this.cache[saveDirectory] = {};
     }
 
-    this.cache[saveDirectory][src] = filePath;
+    this.cache[saveDirectory][alt] = val;
   }
 
   public write(): void {

@@ -31,7 +31,7 @@ interface Image {
 // PARAMS
 //
 
-const CACHE_PATH = resolve(__dirname, '.download-md-images.mdImagesJsonCache.json');
+const CACHE_PATH = resolve(__dirname, '.download-md-images.cache.json');
 const SEARCH_DIRECTORY = resolve(__dirname, '..');
 
 //
@@ -56,7 +56,7 @@ const errors: string[] = [];
  * @param {string} file - Markdown File.
  */
 function findImagesInMarkdown(file: string): Array<Image> {
-  const readMe = readFileSync(file, 'utf-8');
+  const readMe = readFileSync(file, { encoding: 'utf-8' });
 
   const readmeHtml = marked(readMe); // .md to .html.
 
@@ -94,7 +94,7 @@ async function downloadImages(images: Image[], saveDirectory: string) {
 
     try {
       // Fetch the image ONLY if it hasn't been cached.
-      if (!mdImagesJsonCache.exists(saveDirectory, src)) {
+      if (!mdImagesJsonCache.exists(saveDirectory, alt)) {
         const result = await axios({ url: src, responseType: 'stream' });
 
         // Downloading the images, then saving them.
@@ -112,7 +112,7 @@ async function downloadImages(images: Image[], saveDirectory: string) {
               { flags: 'w+' },
             ))
             .on('finish', (value: unknown) => {
-              mdImagesJsonCache.set(saveDirectory, src, filePath);
+              mdImagesJsonCache.set(saveDirectory, alt, { src, local: filePath });
   
               resolve(value);
             })

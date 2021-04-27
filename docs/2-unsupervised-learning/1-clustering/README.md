@@ -2,7 +2,7 @@
 
 A supervised learning problem is given a set of labels to fit a hypothesis to it. In contrast, in unsupervised learning we're given data that does not have any labels associated with it. What we do is we give this unlabeled training set to an algorithm and we just ask the algorithm to find some structure in the data for us. One type of structure we might have an algorithm find is that it looks like a data set grouped into two separate clusters, and so an algorithm that finds clusters like these is called a clustering algorithm.
 
-![Clustering Example](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[2].png)
+![Clustering Example](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/Clustering-Example.png)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -32,17 +32,17 @@ And lastly, using clustering algorithms to **understand galaxy formations** and 
 
 In the clustering problem we are given an unlabeled data set and we would like to have an algorithm automatically group the data into coherent subsets or into coherent clusters for us. The K-Means algorithm is by far the most popular, and by far the most widely used clustering algorithm. The K-Means clustering algorithm is best illustrated in pictures. Let's say I want to take an unlabeled data set like the one shown here, and I want to group the data into two clusters.
 
-![K-Means Algorithm Example I](https://www.holehouse.org/mlclass/13_Clustering_files/Image.png)
+![K-Means Algorithm Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20I.png)
 
 The first step is the Cluster assignment step. Here we randomly initialize two points, called the cluster centroids. So, these two crosses in the picture below are called the Cluster Centroids, and these centroids are randomly allocated points, you can have as many cluster centroid as you want (K cluster centroids). In this example, we have just two clusters.
 
-![K-Means Algorithm Example II](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[1].png)
+![K-Means Algorithm Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20II.png)
 
 In this first step, we go through each example and depending on whether it's closer to the red or blue centroid, we assign each point to one of the two clusters. To demonstrate this, we've gone through the data and denote each point with red or blue respective to their assigned centroid (crosses) in the picture above.
 
 In the second step we move the centroids, the "move centroids step". We take each centroid and move them to the average of the correspondingly assigned data-points.
 
-![K-Means Algorithm Example III](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[2].png)
+![K-Means Algorithm Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20III.png)
 
 After moving the centroids, these steps are repeated until convergence. More technically, we can define this algorithm as having the following input and logic:
 
@@ -61,18 +61,18 @@ After moving the centroids, these steps are repeated until convergence. More tec
     - In this second loop, over each centroid calculate the average mean based on all the points associated with each centroid from c<sup>(i)</sup>.
   - If there is a centroid with no assigned data, either remove that centroid so we end up with K-1 cluster centroids, or randomly reinitialize.
 
-![K-Means Algorithm Example IV](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[3].png)
-![K-Means Algorithm Example V](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[4].png)
+![K-Means Algorithm Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20IV.png)
+![K-Means Algorithm Example V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Example%20V.png)
 
 ## K-Means Algorithm for Non-Separated Clusters
 
 Very often the K-Means Algorithm is applied to datasets where there aren't well defined clusters, e.g. T-shirt sizes.
 
-![K-Means Algorithm Non-Separated Clusters Example I](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[5].png)
+![K-Means Algorithm Non-Separated Clusters Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Non-Separated%20Clusters%20Example%20I.png)
 
 These are not so obvious discrete groups. Say you want to have three sizes (small, medium, large - so <i>K = 3</i>), how big do we make these groups? One way would be to run K-Means on this data, so the following may be done:
 
-![K-Means Algorithm Non-Separated Clusters Example II](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[6].png)
+![K-Means Algorithm Non-Separated Clusters Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Non-Separated%20Clusters%20Example%20II.png)
 
 K-Means will "create" these three clusters, even though they aren't really there. By looking at the first population of people, we can design a small T-shirt which fits the 1st cluster, and so on for the other two. This is an example of market segmentation.
 
@@ -80,7 +80,7 @@ K-Means will "create" these three clusters, even though they aren't really there
 
 We know that supervised learning algorithms have an optimization objective (cost function). Just as these supervised learning algorithms, so does the K-Means algorithm. Using the following notation we can write the optimization objective:
 
-![K-Means Algorithm Optimization Objective Example I](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[7].png)
+![K-Means Algorithm Optimization Objective Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Optimization%20Objective%20Example%20I.png)
 
 K-Means has an optimization objective like the supervised learning functions we've seen. This is good because knowing because it helps for debugging, and it helps in finding the optimal clusters.
 
@@ -97,11 +97,11 @@ Lets say x<sup>i</sup> as been assigned to cluster 5. This means that:
 
 So the cost are the squared distances between training examples x<sup>i</sup> and the cluster centroid to which x<sup>i</sup> has been assigned to. This is just what we've been doing, as the visual description below shows.
 
-![K-Means Algorithm Optimization Objective Example II](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[8].png)
+![K-Means Algorithm Optimization Objective Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Optimization%20Objective%20Example%20II.png)
 
 The red line here shows the distances between the example x<sup>i</sup> and the cluster to which that example has been assigned, when the example is close to the cluster, this value is small as it denotes the distance. When the cluster is very far away from the example, the value is large. This is sometimes called the **distortion** (or **distortion cost function**), so we are finding the values which minimizes this function.
 
-![K-Means Algorithm Optimization Objective Example III](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[9].png)
+![K-Means Algorithm Optimization Objective Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/K-Means-Algorithm%20Optimization%20Objective%20Example%20III.png)
 
 If we consider the K-Means algorithm:
 
@@ -120,7 +120,7 @@ When running K-Means, you should have the number of cluster centroids, K, set to
 
 So, we set μ<sub>1</sub> up to μ<sub>K</sub> to the values of these examples. K-Means can converge to different solutions depending on the initialization setup due to a risk of the centroids converging in a local optima as shown in the picture below because the centroids are randomly initialized to be values of x<sup>i</sup>.
 
-![Random Initialization Example I](https://www.holehouse.org/mlclass/13_Clustering_files/Image%20[10].png)
+![Random Initialization Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/Random-Initialization%20Example%20I.png)
 
 The local optima are valid convergence points, but local optima not global optima. If this is a concern, then we can do multiple random initializations to see if we get the same results, therefore many of these same results are likely to indicate that there is a global optima.
 
@@ -146,7 +146,7 @@ We're going to vary K, which is the total number of clusters. We're going to run
 
 Then I'm gonna run K-means with four, five and so on. And so we end up with a curve showing how the distortion, you know, goes down as we increase the number of clusters. And so we get a curve that maybe looks like the picture below.
 
-![Elbow Method Example I](http://www.holehouse.org/mlclass/13_Clustering_files/Image%20[12].png)
+![Elbow Method Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/Elbow-Method%20Example%20I.png)
 
 If you look at this curve, what the Elbow Method does is say "Looks like there's a clear elbow there". You find this sort of pattern where the distortion goes down rapidly from 1 to 2, and 2 to 3, and then you reach an elbow at 3, and then the distortion goes down very slowly after that.
 
@@ -160,7 +160,7 @@ Another method is to run K-Means with a later/downstream purpose and see how wel
 
 For example, T-shirt sizes. If you have three sizes (small, medium, large) or five sizes (extra small, small, medium, large, extra large), then run K means where K = 3 and K = 5. This would look like this:
 
-![Downstream Purpose Method Example I](http://www.holehouse.org/mlclass/13_Clustering_files/Image%20[13].png)
+![Downstream Purpose Method Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/2-unsupervised-learning/1-clustering/images/Downstream-Purpose%20Method%20Example%20I.png)
 
 This provides us with a way to chose the number of clusters. We could consider the cost of making extra sizes vs. how well distributed the products are. How important are those sizes though? (e.g. more sizes might make the customers happier). So, the applied problem may help guide the number of clusters.
 

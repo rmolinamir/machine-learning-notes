@@ -28,7 +28,7 @@ So rather than trying to hand design, there are a few settings where you might b
 
 For example, you own a company that sells movies, and you let users rate movies using a 0 to 5 star rating system. Let's say that you have five movies, and that you have four users.
 
-![Problem Formulation Example I](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image.png)
+![Problem Formulation Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Problem-Formulation%20Example%20I.png)
 
 And:
 
@@ -53,7 +53,7 @@ How do we predict user ratings? With the example above, for each movie we have f
 - x<sup>1</sup>: measuring romance.
 - x<sup>2</sup>: measuring action.
 
-![Content Based Recommendations Example I](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[1].png)
+![Content Based Recommendations Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20I.png)
 
 If we have features like these, each movie can be recommended by a feature vector. We also add the intercept term x<sup>0</sup> = 1 just like in linear regressions. To be consistent with our notation, `n` is going to be the number of features NOT counting the x<sup>0</sup> term, so n = 2, and each user rating will be treated as a separate linear regression problem.
 
@@ -65,11 +65,11 @@ Where `r` are the star ratings, and it's the product of the parameter vector and
 
 For example, let's take user 1 (Alice) and see what she makes of the modern classic Cute Puppies of Love (CPOL). We have some parameter vector (θ<sup>1</sup>) associated with Alice (we'll explain later how we derived these values):
 
-![Content Based Recommendations Example II](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[3].png)
+![Content Based Recommendations Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20II.png)
 
 CPOL has a feature vector (x<sup>3</sup>) associated with it:
 
-![Content Based Recommendations Example III](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[4].png)
+![Content Based Recommendations Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20III.png)
 
 Applying the equation used to compute the user rating, our prediction will be equal to:
 
@@ -83,13 +83,13 @@ We should also add one final piece of notation m<sup>j</sup>, which is the numbe
 
 This is just like the least squares regressions in linear regression, where we want to choose θ<sub>j</sub> (the parameter vector theta `j`) to minimize this type of squared error term.
 
-![Content Based Recommendations Example IV](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[5].png)
+![Content Based Recommendations Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20IV.png)
 
 To do this:
 
 - Sum over all values of `i` (all movies the user has used) when r(i,j) = 1 (i.e. all the movies that the user has rated).
 - We can also add a regularization term to make our equation look as follows:
-    ![Content Based Recommendations Example V](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[6].png)
+    ![Content Based Recommendations Example V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20V.png)
 
 The regularization term goes from k = 1 to m, so (θ<sub>j</sub>) ends up being a n + 1 feature vector, just like in linear regression we won't regularize over the bias terms (θ<sub>0</sub>). If you do this, you will get a reasonable value.
 
@@ -97,21 +97,21 @@ To make this a little bit clearer you can get rid of the m<sup>j</sup> term (bec
 
 So to learn θ<sup>j</sup>:
 
-![Content Based Recommendations Example VI](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[7].png)
+![Content Based Recommendations Example VI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20VI.png)
 
 But for our recommender system we want to learn parameters for *all* users, so we add an extra summation term to this which means we determine the minimum θ<sup>j</sup> value for every user:
 
-![Content Based Recommendations Example VII](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[8].png)
+![Content Based Recommendations Example VII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20VII.png)
 
 When you do this as a function of each θ<sup>j</sup> parameter vector you get the parameters for each user. This is our optimization objective: J(θ<sup>1</sup>, ..., θ<sup>n<sub>u</sub></sup>).
 
 In order to do the minimization we have the following gradients:
 
-![Content Based Recommendations Example VIII](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[9].png)
+![Content Based Recommendations Example VIII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20VIII.png)
 
 But because we're not regularizing the bias term (our regularization term here regularizes only the values of theta θ<sup>j</sup> for k not equal to 0, so we don't regularize θ<sup>0</sup>), we can write it slightly differently to our previous gradient descent implementations:
 
-![Content Based Recommendations Example IX](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[10].png)
+![Content Based Recommendations Example IX](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Content-Based%20Recommendations%20Example%20IX.png)
 
 This approach is called content-based approach because we assume we have features regarding the content which will help us identify things that make them appealing to a user. However, often such features are not available.
 
@@ -126,11 +126,11 @@ Recall our original data set above for our five movies and four users, let's ass
 
 Let's change the problem and pretend we have a data set where we don't know any of the features associated with the movies.
 
-![Collaborative Filtering Example I](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[11].png)
+![Collaborative Filtering Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Example%20I.png)
 
 Now let's make a different assumption, we've polled each user and found out how much each user likes romantic and action movies and generated the following parameter set:
 
-![Collaborative Filtering Example II](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[12].png)
+![Collaborative Filtering Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Example%20II.png)
 
 - Alice and Bob like romance but dislike action.
 - Carol and Dave like action but dislike romance.
@@ -151,7 +151,7 @@ This is a bit of a simplification in terms of the maths, but what we're really a
 
 From this we can estimate that x<sup>1</sup> is:
 
-![Collaborative Filtering Example III](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[13].png)
+![Collaborative Filtering Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Example%20III.png)
 
 Using that same approach we should then be able to determine the remaining feature vectors for the other movies.
 
@@ -161,7 +161,7 @@ We can more formally describe the approach as follows:
 
 - Given θ<sup>1</sup>, ..., θ<sup>n<sub>u</sub></sup>, (i.e. given the parameter vectors for each users' preferences),
 - We must minimize an optimization function which tries to identify the best parameter vector associated with a movie:
-  ![Formalizing the collaborative filtering problem Example I](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[14].png)
+  ![Formalizing the collaborative filtering problem Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Formalizing-the%20collaborative%20filtering%20problem%20Example%20I.png)
 - Assuming over all the indices `j` for where we have data for movie `i`, we're minimizing this squared error.
 - Like before, the above equation gives us a way to learn the features for one movie.
 - We want to learn all the features for all the movies - so we need an additional summation term.
@@ -181,20 +181,20 @@ This causes the collaborative filtering algorithm to converge on a reasonable se
 Here we combine the ideas from before to build a collaborative filtering algorithm, our starting point is as follows:
 
 1. If we're given the movie's features we can use that to work out the users' preferences:
-    ![Collaborative Filtering Algorithm Example I](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[15].png)
+    ![Collaborative Filtering Algorithm Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Algorithm%20Example%20I.png)
     - If we're given the users' preferences we can use them to work out the movie's features:
-    ![Collaborative Filtering Algorithm Example II](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[16].png)
+    ![Collaborative Filtering Algorithm Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Algorithm%20Example%20II.png)
 2. One thing you could do is:
    - Randomly initialize the parameters θ.
    - Compute back and forward between θ and x values until convergence.
 
 But there's a more efficient algorithm which can solve θ and x simultaneously by defining a new optimization objective which is a function of θ and x:
 
-![Collaborative Filtering Algorithm Example III](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[17].png)
+![Collaborative Filtering Algorithm Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Algorithm%20Example%20III.png)
 
 The squared error term is the same as the squared error term in the two individual objectives above:
 
-![Collaborative Filtering Algorithm Example IV](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[18].png)
+![Collaborative Filtering Algorithm Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Collaborative-Filtering%20Algorithm%20Example%20IV.png)
 
 - It's summing over every movie rated by every users, and the ":" character means, "for which".
 - so it reads as "Sum over all pairs (i,j) for which r(i,j) is equal to 1".
@@ -214,8 +214,8 @@ When we're learning the features this way:
 1. Initialize θ<sup>1</sup>, ..., θ<sup>n<sub>u</sub></sup>, and x<sup>1</sup>, ..., x<sup>n<sub>m</sub></sup> to small random and different values like in neural networks.
 2. Minimize cost function J(θ<sup>1</sup>, ..., θ<sup>n<sub>u</sub></sup>, and x<sup>1</sup>, ..., x<sup>n<sub>m</sub></sup>) using gradient descent:
    - We find that the update rules look like this:
-     ![Feature Gradient](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[19].png)
-     ![Parameter Gradient](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[20].png)
+     ![Feature Gradient](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Feature-Gradient.png)
+     ![Parameter Gradient](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Parameter-Gradient.png)
    - Where:
      - Where the top term is the partial derivative of the cost function with respect to x<sub>k<sup>(i)</sup></sub> while the bottom is the partial derivative of the cost function with respect to θ<sub>k<sup>(i)</sup></sub>.
      - We regularize every parameter of the cost function because there is no bias term, so there is no special case update rule.
@@ -225,23 +225,23 @@ When we're learning the features this way:
 
 Having looked at the collaborative filtering algorithm, how can we improve the algorithm? Given one product, can we determine other relevant products? We start by working out another way of writing out our predictions. So take all ratings by all users in our example above and group into a matrix Y:
 
-![Vectorization: Low Rank Matrix Factorization Example I](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[21].png)
+![Vectorization: Low Rank Matrix Factorization Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Vectorization-Low%20Rank%20Matrix%20Factorization%20Example%20I.png)
 
 Where 5 movies and 4 users are composed into a [5 x 4] matrix.
 
 Given [Y] there's another way of writing out all the predicted ratings:
 
-![Low Rank Matrix Factorization Matrix Y](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[22].png)
+![Low Rank Matrix Factorization Matrix Y](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Low-Rank%20Matrix%20Factorization%20Matrix%20Y.png)
 
 With this matrix of predictive ratings we determine the (i,j) entry for EVERY movie.
 
 We can define another matrix X (just like matrix we had for linear regression), take all the features for each movie and stack them in rows (think of each movie as one example):
 
-![Low Rank Matrix Factorization Matrix X](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[23].png)
+![Low Rank Matrix Factorization Matrix X](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Low-Rank%20Matrix%20Factorization%20Matrix%20X.png)
 
 And do the same for matrix Θ, taking each parameter per user vector and stack in rows:
 
-![Low Rank Matrix Factorization Matrix Θ](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[24].png)
+![Low Rank Matrix Factorization Matrix Θ](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Low-Rank%20Matrix%20Factorization%20Matrix%20%CE%98.png)
 
 Given our new matrices X and θ we can have a vectorized way of computing the prediction range matrix by doing X \* θ<sup>T</sup>. We can give this algorithm another name - the low rank matrix factorization. This comes from the property that the X \* θ<sup>T</sup> calculation has a property in linear algebra where we create a low rank matrix.
 
@@ -264,7 +264,7 @@ If we have two movies x<sup>i</sup> and x<sup>j</sup>, we want to minimize ||x<s
 
 We have one final implementation detail to make the algorithm work a bit better. To show why we might need mean normalization, let's consider an example where there's a user who hasn't rated any movies:
 
-![Implementational Detail: Mean Normalization Example I](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[25].png)
+![Implementational Detail: Mean Normalization Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20I.png)
 
 Lets say that the algorithm does the following for this user:
 
@@ -277,23 +277,23 @@ Looking in the first term of the optimization objective:
 - So this term places no role in determining θ<sup>5</sup>.
 - So we're just minimizing the final regularization term.
 
-![Implementational Detail: Mean Normalization Example II](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[26].png)
+![Implementational Detail: Mean Normalization Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20II.png)
 
 If the goal is to minimize this term then:
 
-![Implementational Detail: Mean Normalization Example III](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[27].png)
+![Implementational Detail: Mean Normalization Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20III.png)
 
 This makes sense because if there's no data to pull the values away from 0, we predict ANY movie to be zero. But presumably Eve doesn't hate all movies, so if we're doing this we can't recommend any movies to her either. **Mean normalization should let us fix this problem**. How does mean normalization work?
 
 Group all our ratings into matrix Y as before. We now have a column of indetermined values (?) which corresponds to Eve's ratings, and then we compute the average rating each movie obtained and store in an n<sub>m</sub> dimensional vector.
 
-![Implementational Detail: Mean Normalization Example IV](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[28].png)
+![Implementational Detail: Mean Normalization Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20IV.png)
 
-![Implementational Detail: Mean Normalization Example V](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[29].png)
+![Implementational Detail: Mean Normalization Example V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20V.png)
 
 If we look at all the movie ratings in Y we can subtract off the mean rating:
 
-![Implementational Detail: Mean Normalization Example VI](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[30].png)
+![Implementational Detail: Mean Normalization Example VI](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20VI.png)
 
 This means we normalize each movie to have an average rating of 0. Now, we take the new set of ratings and use it with the collaborative filtering algorithm. We learn θ<sup>j</sup> and x<sup>i</sup> from the mean normalized ratings, so for our prediction of user `j` on movie `i`, predict:
 
@@ -304,7 +304,7 @@ This means we normalize each movie to have an average rating of 0. Now, we take 
 
 But for user 5 the same argument applies:
 
-![Implementational Detail: Mean Normalization Example VII](https://www.holehouse.org/mlclass/16_Recommender_Systems_files/Image%20[31].png)
+![Implementational Detail: Mean Normalization Example VII](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/1-recommender-systems/images/Implementational-Detail%20Mean%20Normalization%20Example%20VII.png)
 
 On any movie `i` we're going to predict (θ<sup>5</sup>)<sup>T</sup>x<sup>5</sup> + μ<sub>5</sub>, where (θ<sup>5</sup>)<sup>T</sup>x<sup>5</sup> = to 0 still, but we then add the mean (μ<sub>i</sub>) which means Eve has an average rating assigned to each movie.
 

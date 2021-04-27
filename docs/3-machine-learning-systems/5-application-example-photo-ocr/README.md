@@ -47,7 +47,7 @@ Our Photo OCR pipeline looks like this:
 3. Do character classification.
 4. Optionally, some may do spell check after this too (we're not focussing on such systems though).
 
-![Problem Description and Pipeline](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image.png)
+![Problem Description and Pipeline](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Problem-Description%20and%20Pipeline.png)
 
 ## Sliding Windows
 
@@ -55,19 +55,19 @@ As mentioned, stage 1 is text detection. How do the individual models work? We w
 
 This is an unusual problem in computer vision, different rectangles (which surround text) may have different aspect ratios, text may be short (few words) or long (many words), with tall or short font, the text might be straight on or slanted, etc.
 
-![Sliding Windows Example I](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[1].png)
+![Sliding Windows Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20I.png)
 
 Let's start with a simpler example of pedestrian detection where we want to take an image and find pedestrians in the image:
 
-![Sliding Windows Example II](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[2].png)
+![Sliding Windows Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20II.png)
 
 This is a slightly simpler problem because the aspect ration remains pretty constant, building our detection system. With a 82x36 aspect ratio being a typical aspect ratio for a standing human, we collect a training set of positive and negative examples:
 
-![Sliding Windows Example III](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[3].png)
+![Sliding Windows Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20III.png)
 
 We could have 1000 - 10000 training examples and train a neural network to take an image and classify that image as pedestrian or not, this gives you a way to train your system. But now we have a new image below, how do we find pedestrians in it?
 
-![Sliding Windows Example IV](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[4].png)
+![Sliding Windows Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20IV.png)
 
 - We start by taking a rectangular 82x36 patch in the image.
   - We run this patch (green rectangle) through the classifier, and hopefully in this example it will return y = 0.
@@ -81,17 +81,17 @@ We could have 1000 - 10000 training examples and train a neural network to take 
   - Each time we process the image patch, we're resizing the larger patch to a smaller image, then running that smaller image through the classifier.
 - Hopefully, by changing the patch size and rastering repeatedly across the image, you eventually recognize all the pedestrians in the picture.
 
-![Sliding Windows Example V](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[5].png)
+![Sliding Windows Example V](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Sliding-Windows%20Example%20V.png)
 
 ### Text Detection
 
 For text detection, like pedestrian detection, we generate a labeled training set with positive examples (some kind of text) and negative examples (not text).
 
-![Text Detection Example I](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[6].png)
+![Text Detection Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Text-Detection%20Example%20I.png)
 
 Having trained the classifier we apply it to an image. So, we run a sliding window classifier at a fixed rectangle size. If you do that end up with something like this:
 
-![Text Detection Example II](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[7].png)
+![Text Detection Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Text-Detection%20Example%20II.png)
 
 White region show where text detection system thinks text is. Different shades of gray correspond to probability associated with how sure the classifier is the section contains text:
 
@@ -102,11 +102,11 @@ For text detection, we want to draw rectangles around all the regions where ther
 
 Say, for every pixel, is it within some distance of a white pixel? If yes then colour it white:
 
-![Text Detection Example III](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[8].png)
+![Text Detection Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Text-Detection%20Example%20III.png)
 
 We look at the connected white regions in the image above and draw rectangles around those which make sense as text (i.e. tall thin boxes don't make sense).
 
-![Text Detection Example IV](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[9].png)
+![Text Detection Example IV](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Text-Detection%20Example%20IV.png)
 
 This example misses a piece of text on the door because the aspect ratio is wrong, it's hard to read.
 
@@ -114,7 +114,7 @@ This example misses a piece of text on the door because the aspect ratio is wron
 
 Stage two of the pipeline is character segmentation. We will use a supervised learning algorithm. Look in a defined image patch and decide, is there a split between two characters? So, for example, our first training data item below looks like there is such a split. Similarly, the negative examples are either empty or hold full characters (i.e. there is no split between two characters in the middle).
 
-![Character Segmentation Example I](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[10].png)
+![Character Segmentation Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Character-Segmentation%20Example%20I.png)
 
 We train a classifier to try and classify between positive and negative examples, then we run that classifier on the regions detected as containing text in the previous section. We use a 1-dimensional sliding window (horizontal movement only) to move along text regions to determine if each window snapshot looks like the split between two characters.
 
@@ -123,7 +123,7 @@ We train a classifier to try and classify between positive and negative examples
 
 So we have something that looks like this:
 
-![Character Segmentation Example II](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[11].png)
+![Character Segmentation Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Character-Segmentation%20Example%20II.png)
 
 ### Character Classification
 
@@ -145,13 +145,13 @@ For example, if we go and collect a large labeled data set, it will look like th
 - Our goal is to take an image patch and have the system recognize the character.
 - We treat the images as gray-scale (makes it a bit easer since color has no much impact).
 
-![Getting Lots of Data and Artificial Data Example I](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[12].png)
+![Getting Lots of Data and Artificial Data Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Getting-Lots%20of%20Data%20and%20Artificial%20Data%20Example%20I.png)
 
 How can we amplify this? Modern computers often have a big font library. If you go to websites, you can get huge free font libraries. For more training data, we can take characters from different fonts, and paste these characters again on top of random backgrounds.
 
 After some work, can build a synthetic training set like this:
 
-![Getting Lots of Data and Artificial Data Example II](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[13].png)
+![Getting Lots of Data and Artificial Data Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Getting-Lots%20of%20Data%20and%20Artificial%20Data%20Example%20II.png)
 
 - Random background.
 - Apply some blurring/distortion filters.
@@ -162,7 +162,7 @@ It's important to note that **if you do a sloppy job this won't help**.
 
 The above is an example of creating new data from scratch, but there are other ways to introduce distortion into existing data, e.g. take a character and warp it.
 
-![Getting Lots of Data and Artificial Data Example III](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[14].png)
+![Getting Lots of Data and Artificial Data Example III](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Getting-Lots%20of%20Data%20and%20Artificial%20Data%20Example%20III.png)
 
 This way we generate 16 new examples per example. It allows you to amplify existing training set. But, it also takes thought and insight in terms of deciding how to amplify the data set.
 
@@ -197,7 +197,7 @@ Say, we find that our test set has 72% accuracy. Let's perform a ceiling analysi
 
 We simulate if our text detection system was 100% accurate, so we're feeding the character segmentation module with 100% accurate data now. How does this change the accuracy of the overall system?
 
-![Ceiling Analysis: What Part of the Pipeline to Work on Next Example I](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[15].png)
+![Ceiling Analysis: What Part of the Pipeline to Work on Next Example I](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Ceiling-Analysis%20What%20Part%20of%20the%20Pipeline%20to%20Work%20on%20Next%20Example%20I.png)
 
 - Say, accuracy goes up to 89% (from 72%).
 - Next, we do the same for the character segmentation
@@ -217,7 +217,7 @@ The "ceiling" is that each module has a ceiling by which making it perfect, it w
 
 One final example is face recognition. Note that this is not how it's done in practice, but let's imagine we have the following pipeline:
 
-![Ceiling Analysis: What Part of the Pipeline to Work on Next Example II](https://www.holehouse.org/mlclass/18_Application_Example_OCR_files/Image%20[16].png)
+![Ceiling Analysis: What Part of the Pipeline to Work on Next Example II](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/3-machine-learning-systems/5-application-example-photo-ocr/images/Ceiling-Analysis%20What%20Part%20of%20the%20Pipeline%20to%20Work%20on%20Next%20Example%20II.png)
 
 How would you do ceiling analysis for this?
 

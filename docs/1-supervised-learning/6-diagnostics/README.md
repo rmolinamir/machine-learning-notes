@@ -49,11 +49,11 @@ The new procedure using these two sets is then:
 
 To compute the test set error:
 
-![The test set error](https://i.imgur.com/qBLc8s1.png)
+![The test set error](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/The-test%20set%20error.png)
 
 This gives us a binary 0 or 1 error result based on a misclassification. The average test error for the test set is:
 
-![Test Error](https://i.imgur.com/UD9NxXd.png)
+![Test Error](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Test-Error.png)
 
 This gives us the proportion of the test data that was misclassified.
 
@@ -93,7 +93,7 @@ High variance (overfitting): the training error is low, but the cross validation
 
 The is summarized in the figure below:
 
-![Diagnosing Bias vs. Variance](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/I4dRkz_pEeeHpAqQsW8qwg_bed7efdd48c13e8f75624c817fb39684_fixed.png?expiry=1619568000000&hmac=yHA_uY3oeGDeyEt_IfBM-RGYEjondM1JxDKhmr9lOaw)
+![Diagnosing Bias vs. Variance](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Diagnosing-Bias%20vs.%20Variance.png)
 
 ## Regularization and Bias/Variance
 
@@ -106,7 +106,7 @@ How do we choose our parameter λ to get it 'just right'? In order to choose the
 5. Select the best combo that produces the lowest error on the cross validation set.
 6. Using the best combo Θ and λ, apply it on the test cost function and calculate the error to see if it has a good generalization of the problem.
 
-![Regularization and Bias/Variance](https://i.imgur.com/TKIIMuz.png)
+![Regularization and Bias/Variance](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Regularization-and%20BiasVariance.png)
 
 ## Learning Curves
 
@@ -123,7 +123,7 @@ Training an algorithm on a very few number of data points (such as 1, 2 or 3) wi
 
 **If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much.**
 
-![Typical Learning Curve for High Bias](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bpAOvt9uEeaQlg5FcsXQDA_ecad653e01ee824b231ff8b5df7208d9_2-am.png?expiry=1619568000000&hmac=XyuadkH9BurLzUcrhUryD8893YBT-smlN_3NPq5B35w)
+![Typical Learning Curve for High Bias](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Typical-Learning%20Curve%20for%20High%20Bias.png)
 
 **Experiencing high variance:**
 
@@ -133,7 +133,7 @@ Training an algorithm on a very few number of data points (such as 1, 2 or 3) wi
 
 **If a learning algorithm is suffering from high variance, getting more training data is likely to help.**
 
-![Typical Learning Curve for High Variance](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/vqlG7t9uEeaizBK307J26A_3e3e9f42b5e3ce9e3466a0416c4368ee_ITu3antfEeam4BLcQYZr8Q_37fe6be97e7b0740d1871ba99d4c2ed9_300px-Learning1.png?expiry=1619568000000&hmac=Mfr0tu_9kOrCHMCVDJiATHitUYc3CCew5Rf_LnxwMTw)
+![Typical Learning Curve for High Variance](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/6-diagnostics/images/Typical-Learning%20Curve%20for%20High%20Variance.png)
 
 ## Neural Networks and Overfitting
 

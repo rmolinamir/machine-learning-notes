@@ -19,7 +19,7 @@ Let's examine how we will represent a hypothesis function using neural networks.
 
 In our model, our dendrites are like the input features <i>x<sub>0</sub> ... x<sub>n</sub></i>, and the output is the result of our hypothesis function. In this model our <i>x<sub>0</sub></i> input node is sometimes called the "bias unit." It is always equal to 1. In neural networks, we use the same logistic function as in classification, yet we sometimes call it a sigmoid (logistic) activation function. In this situation, our "theta" parameters are sometimes called "weights".
 
-![Neural Networks Model Representation Simplistic Representation](https://i.imgur.com/YvrP11j.png)
+![Neural Networks Model Representation Simplistic Representation](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Neural-Networks%20Model%20Representation%20Simplistic%20Representation.png)
 
 - Our input nodes (layer 1), also known as the "input layer", go into another node (layer 2), which finally outputs the hypothesis function, known as the "output layer".
 - We can have intermediate layers of nodes between the input and output layers called the "hidden layers."
@@ -29,11 +29,11 @@ Our hypothesis output is the logistic function applied to the sum of the values 
 
 Each layer gets its own matrix of weights, and the dimensions of these matrices of weights is determined as follows:
 
-![Matrix of Weights Explanation](https://i.imgur.com/Np83NLF.png)
+![Matrix of Weights Explanation](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Matrix-of%20Weights%20Explanation.png)
 
 The +1 comes from the addition of the "bias nodes". In other words the output nodes will not include the bias nodes while the inputs will. The following image summarizes our model representation:
 
-![Neural Networks Model Representation 1](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/0rgjYLDeEeajLxLfjQiSjg_0c07c56839f8d6e8d7b0d09acedc88fd_Screenshot-2016-11-22-10.08.51.png?expiry=1619568000000&hmac=eGToZqvXkvcM9izLda9-r49PRX38cZU2RJIZ_ghffCo)
+![Neural Networks Model Representation 1](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Neural-Networks%20Model%20Representation%201.png)
 
 ## Neural Networks Cost Function
 
@@ -45,7 +45,7 @@ Let's first define a few variables that we will need to use:
 
 Recall that in neural networks, we may have many output nodes. We denote <i>h<sub>Θ</sub>(x)<sub>k</sub></i> as being a hypothesis that results in the <i>k<sup>th</sup></i> output. Our cost function for neural networks is going to be a generalization of the one we used for logistic regression. Recall that the cost function for regularized logistic regression was:
 
-![Neural Networks Cost Function](https://i.imgur.com/9G6EwQJ.png)
+![Neural Networks Cost Function](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Neural-Networks%20Cost%20Function.png)
 
 We have added a few nested summations to account for our multiple output nodes. In the first part of the equation, before the square brackets, we have an additional nested summation that loops through the number of output nodes.
 
@@ -79,7 +79,7 @@ For training example t =1 to m:
 
 2. Perform forward propagation to compute <i>a<sup>(1)</sup></i> for l = 2, 3, …, L.
 
-      ![Forward propagation](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bYLgwteoEeaX9Qr89uJd1A_73f280ff78695f84ae512f19acfa29a3_Screenshot-2017-01-10-18.16.50.png?expiry=1619568000000&hmac=gQqZyrnYxv0chkkZuyQ3UdBVS8DCBl38p3BA8fSUJn0)
+      ![Forward propagation](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Forward-propagation.png)
 
 3. Using <i>y<sup>(t)</sup></i>, compute <i>δ<sup>(L)</sup> = a<sup>(L)</sup> - y<sup>(t)</sup></i>
 
@@ -91,26 +91,26 @@ For training example t =1 to m:
 
    The g-prime derivative terms can also be written out as:
 
-   ![g-prime derivative terms](https://i.imgur.com/HwBuykQ.png)
+   ![g-prime derivative terms](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/g-prime-derivative%20terms.png)
 
 5. We update our new Δ matrix:
 
-   ![Delta Matrix 1](https://i.imgur.com/KM9YoN9.png)
-   ![Delta Matrix 2](https://i.imgur.com/zdmRUE3.png)
+   ![Delta Matrix 1](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Delta-Matrix%201.png)
+   ![Delta Matrix 2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Delta-Matrix%202.png)
 
    The capital-delta matrix D is used as an "accumulator" to add up our values as we go along and eventually compute our partial derivative. Thus we get:
 
-   ![Delta Matrix 3](https://i.imgur.com/6DlQkns.png)
+   ![Delta Matrix 3](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Delta-Matrix%203.png)
 
 ## Gradient Checking
 
 Gradient checking will assure that our backpropagation works as intended. We can approximate the derivative of our cost function with:
 
-![Gradient Checking 1](https://i.imgur.com/8M2iNR2.png)
+![Gradient Checking 1](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Gradient-Checking%201.png)
 
 With multiple theta matrices, we can approximate the derivative with respect to Θ as follows:
 
-![Gradient Checking 2](https://i.imgur.com/rvTqcxM.png)
+![Gradient Checking 2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Gradient-Checking%202.png)
 
 A small value for ϵ (epsilon) such as <i>ϵ = 10<sup>-4</sup></i>, guarantees that the math works out properly. If the value for \epsilonϵ is too small, we can end up with numerical problems.
 
@@ -138,7 +138,7 @@ Once you have verified **once** that your backpropagation algorithm is correct, 
 
 Initializing all theta weights to zero does not work with neural networks (because all of the hidden units would have the same activation values). When we backpropagate, all nodes will update to the same value repeatedly. Instead we can randomly initialize our weights for our Θ matrices using the following method:
 
-![Symmety Breaking](https://i.imgur.com/Gq2BgYn.png)
+![Symmety Breaking](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Symmety-Breaking.png)
 
 Hence, we initialize each Θ to a random value between [−ϵ,ϵ]. Using the above formula guarantees that we get the desired bound. The same procedure applies to all the Θ values. Below is some working code you could use to experiment:
 
@@ -180,6 +180,6 @@ for i = 1:m,
 
 The following image gives us an intuition of what is happening as we are implementing our neural network:
 
-![Neural Network Gradient Descent Intuition](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/hGk18LsaEea7TQ6MHcgMPA_8de173808f362583eb39cdd0c89ef43e_Screen-Shot-2016-12-05-at-10.40.35-AM.png?expiry=1619568000000&hmac=hPPpL5XyaP5WkbIwITWpEYoYtWVFAiY4QEUBf1xVehY)
+![Neural Network Gradient Descent Intuition](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/5-neural-networks/images/Neural-Network%20Gradient%20Descent%20Intuition.png)
 
 Ideally, you want <i>h<sub>Θ</sub>(x<sup>(i)</sup>) ≈ y<sup>(i)</sup></i>. This will minimize our cost function. However, keep in mind that <i>J(Θ)</i> is not convex and thus we can end up in a local minimum instead.

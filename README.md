@@ -25,8 +25,8 @@
 
 ## Cheatsheets
 
-![Linear Regression Cheat Sheet](https://miro.medium.com/max/1000/1*PZ3TTZZIT1wlqyt05TpZBg.png)
-![Logistic Regression Cheat Sheet](https://miro.medium.com/max/1000/1*YNmikbD5k_reqBF1QytErQ.png)
+![Linear Regression Cheat Sheet](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/images/Linear-Regression%20Cheat%20Sheet.png)
+![Logistic Regression Cheat Sheet](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/images/Logistic-Regression%20Cheat%20Sheet.png)
 
 ## Contents
 

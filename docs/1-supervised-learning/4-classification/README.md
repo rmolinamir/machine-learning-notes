@@ -29,7 +29,7 @@ We could approach the classification problem ignoring the fact that y is discret
 
 This is accomplished by plugging <i>θ<sup>T</sup>x</i> into the Logistic Function. Our new form uses the "Sigmoid Function," also called the "Logistic Function":
 
-![Sigmoid Function](https://qph.fs.quoracdn.net/main-qimg-6b67bea3311c3429bfb34b6b1737fe0c)
+![Sigmoid Function](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Sigmoid-Function.png)
 
 The function g(z), shown here, maps any real number to the (0, 1) interval, making it useful for transforming an arbitrary-valued function into a function better suited for classification.
 
@@ -51,7 +51,7 @@ Notice that the algorithm is identical to the one we used in linear regression. 
 
 A vectorized implementation is:
 
-![Cost Function Vectorized Implementation](https://latex.codecogs.com/gif.latex?%5CTheta%20%3A%3D%5CTheta%20-%5Cfrac%7B%5Calpha%20%7D%7Bm%7DX%5E%7BT%7D%28g%28X%5CTheta%20%29-%5Cvec%7By%7D%29)
+![Cost Function Vectorized Implementation](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Cost-Function%20Vectorized%20Implementation.png)
 
 ## Advanced Optimization Algorithms for Logistic Regresion
 
@@ -94,11 +94,11 @@ We can apply regularization to both linear regression and logistic regression.
 
 We will modify our gradient descent function to separate out θ<sub>θ</sub> from the rest of the parameters because we do not want to penalize θ<sub>0</sub>.
 
-![Regularized Linear Regression Gradient Descent Equation](https://i.imgur.com/5PKjv22.png)
+![Regularized Linear Regression Gradient Descent Equation](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-Linear%20Regression%20Gradient%20Descent%20Equation.png)
 
 The term accompanying θ<sub>j</sub> performs our regularization. With some manipulation our update rule can also be represented as:
 
-![Regularized Linear Regression Gradient Descent Equation 2](https://imgur.com/5EAqZO5.png)
+![Regularized Linear Regression Gradient Descent Equation 2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-Linear%20Regression%20Gradient%20Descent%20Equation%202.png)
 
 The first term in the above equation accompanying lambda, will always be less than 1. Intuitively you can see it as reducing the value of theta by some amount on every update. Notice that the second term is now exactly the same as it was before.
 
@@ -106,7 +106,7 @@ The first term in the above equation accompanying lambda, will always be less th
 
 To add in regularization, the equation is the same as our original, except that we add another term inside the parentheses:
 
-![Regularized Linear Regression Normal Equation](https://imgur.com/TAnyAn2.png)
+![Regularized Linear Regression Normal Equation](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-Linear%20Regression%20Normal%20Equation.png)
 
 L is a matrix with 0 at the top left and 1's down the diagonal, with 0's everywhere else. It should have dimension (n+1)×(n+1). Intuitively, this is the identity matrix (though we are not including <i>x<sub>0</sub></i>), multiplied with a single real number λ.
 
@@ -114,6 +114,6 @@ L is a matrix with 0 at the top left and 1's down the diagonal, with 0's everywh
 
 We can regularize logistic regression in a similar way that we regularize linear regression. As a result, we can avoid overfitting. The following image shows how the regularized function, displayed by the pink line, is less likely to overfit than the non-regularized function represented by the blue line:
 
-![Regularized logistic Regression Normal Equation](https://imgur.com/wAtynOX.png)
+![Regularized logistic Regression Normal Equation](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-logistic%20Regression%20Normal%20Equation.png)
 
-![Regularized logistic Regression Normal Equation 2](https://imgur.com/JBSKRKw.png)
+![Regularized logistic Regression Normal Equation 2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/4-classification/images/Regularized-logistic%20Regression%20Normal%20Equation%202.png)

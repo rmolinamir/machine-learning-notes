@@ -6,7 +6,7 @@ This function is otherwise called the "Squared error function", or "Mean squared
 
 The idea is to choose values that will make the hypothesis function outputs close to the values of y of the training set.
 
-![Cost Function](https://miro.medium.com/max/315/1*E-iWjE3o9luiVapwzYkR7w.png)
+![Cost Function](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function.png)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -21,20 +21,20 @@ The idea is to choose values that will make the hypothesis function outputs clos
 
 In simple terms, the cost function controls the variations of the hypothesis function. Our objective is to choose variations that minimizes the value of the cost function (the squared error function or mean squared error), i.e. the cost function is determined by mapping out the average values of the squared differences between the training set and the hypothesis functions to changes in the cost function variables (e.g. the slope). If the idea is to minimize the value of the cost function, then the ideal variation would be mapped to the minimum value of the cost function.
 
-![Cost Function Intuition 1.1](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_B8TJZtREea33w76dwnDIg_3e3d4433e32478f8df446d0b6da26c27_Screenshot-2016-10-26-00.57.56.png?expiry=1619568000000&hmac=8qdEIHuqBUI74b38IU8vUJkkrBQn7ivzxY_bKd06YxA)
+![Cost Function Intuition 1.1](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%201.1.png)
 
-![Cost Function Intuition 1.2](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/8guexptSEeanbxIMvDC87g_3d86874dfd37b8e3c53c9f6cfa94676c_Screenshot-2016-10-26-01.03.07.png?expiry=1619568000000&hmac=2us-6CUvMrOqyRKa4FVX8tkZK8PPa6_UrPLaKmUJUEI)
+![Cost Function Intuition 1.2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%201.2.png)
 
-![Cost Function Intuition 1.3](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/fph0S5tTEeajtg5TyD0vYA_9b28bdfeb34b2d4914d0b64903735cf1_Screenshot-2016-10-26-01.09.05.png?expiry=1619568000000&hmac=YUWKOH_tp4X570TjtddEoI6LY90WVLQWZLguI57YkjM)
+![Cost Function Intuition 1.3](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%201.3.png)
 
 ## Cost Function Intuition 2
 
 A contour plot is a graph that contains many contour lines.
 
-![Contour Plot](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/N2oKYp2wEeaVChLw2Vaaug_d4d1c5b1c90578b32a6672e3b7e4b3a4_Screenshot-2016-10-29-01.14.37.png?expiry=1619568000000&hmac=N2HyDV7ZcH5j8j2YdIQ8_3V5R5c0VL62Pis18tNgsYs)
+![Contour Plot](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Contour-Plot.png)
 
 A contour line of a two variable function has a constant value at all points of the same line. In certain variations, the value of the cost function in the contour plot gets closer to the center thus reducing the cost function error, giving our hypothesis function a better fit of the data.
 
-![Cost Function Intuition 2.1](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/26RZhJ34EeaiZBL80Yza_A_0f38a99c8ceb8aa5b90a5f12136fdf43_Screenshot-2016-10-29-01.14.57.png?expiry=1619568000000&hmac=clFyuOJ0SfLqSde9mZvIgILAnGF8LXe4jKWLHrUNKGQ)
+![Cost Function Intuition 2.1](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%202.1.png)
 
-![Cost Function Intuition 2.2](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/hsGgT536Eeai9RKvXdDYag_2a61803b5f4f86d4290b6e878befc44f_Screenshot-2016-10-29-09.59.41.png?expiry=1619568000000&hmac=7DLuWk5XbFJWBuBuL0q_O6dkQ-QIiKShStt5qeBV89c)
+![Cost Function Intuition 2.2](https:/raw.githubusercontent.com/rmolinamir/machine-learning-notes/main/docs/1-supervised-learning/1-cost-function/images/Cost-Function%20Intuition%202.2.png)

@@ -15,8 +15,9 @@ import { MdImagesJsonCache, getFiles } from './helpers';
 // PARAMS
 //
 
-const CACHE_PATH = resolve(__dirname, '.replace-md-images.cache.json');
+const CACHE_PATH = resolve(__dirname, '.download-md-images.cache.json');
 const SEARCH_DIRECTORY = resolve(__dirname, '..');
+const BASE_GITHUB_PATH = 'https://raw.githubusercontent.com/rmolinamir/machine-learning-notes/main';
 
 //
 // CACHE
@@ -28,7 +29,7 @@ const mdImagesJsonCache = new MdImagesJsonCache({ cachePath: CACHE_PATH });
 // IMPLEMENTATION
 //
 
-const spinner = new Spinner('Fetching images...');
+const spinner = new Spinner('Replacing and transforming images...');
 
 const errors: string[] = [];
 
@@ -38,8 +39,24 @@ const errors: string[] = [];
  * @param {string} localUri - Local URI string.
  */
 function transformLocalUriToGithubUri(localUri: string): string {
+  // For example:
 
-  return localUri;
+  // Transform: C:\\Users\\rober\\Desktop\\Projects\\machine-learning-notes\\images\\Linear-Regression Cheat Sheet.png
+  // To: https://github.com/rmolinamir/machine-learning-notes/blob/main/images/Linear-Regression%20Cheat%20Sheet.png
+
+  let uri = localUri;
+
+  uri = uri.replace(SEARCH_DIRECTORY, '');
+
+  uri = uri.replace(/\\|\\\\/g, '/');
+
+  uri = `${BASE_GITHUB_PATH}/${uri}`
+
+  uri = uri.replace(/\/\//g, '/');
+
+  uri = encodeURI(uri);
+
+  return uri;
 }
 
 /**
@@ -52,14 +69,18 @@ function replaceAndTransformMdImage(file: string, saveDirectory: string): void {
   const cachedImages = Object.keys(directoryCache);
 
   if (cachedImages.length) {
-    const fileContents = readFileSync(file, { encoding: 'utf-8' });
+    let fileContents = readFileSync(file, { encoding: 'utf-8' });
 
-    cachedImages.forEach(i => {
-      const src = directoryCache[i];
+    cachedImages.forEach(alt => {
+      const { local } = directoryCache[alt];
 
-      const transformedSrc = transformLocalUriToGithubUri(src);
+      const transformedSrc = transformLocalUriToGithubUri(local);
 
-      fileContents.replace(i, transformedSrc);
+      const dynamicRegExp = `!(\\[${alt}\\])\\([^\\s]+\\)`;
+
+      const markdownImageLinkRegExp = new RegExp(dynamicRegExp, 'g');
+
+      fileContents = fileContents.replace(markdownImageLinkRegExp, `![${alt}](${transformedSrc})`);
     });
 
     writeFileSync(file, fileContents, { flag: 'w+' });
